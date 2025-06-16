@@ -1,103 +1,151 @@
-import Image from "next/image";
+import DestinationCarousel from '@/components/ui/destination-carousel';
+import ExperienceCarousel from '@/components/ui/experience-carousel';
+import Testimonials from '@/components/ui/testimonials';
+import TripsCarousel from '@/components/ui/trips-carousel';
+import { CalendarDays, ChevronRight, CirclePlay, MapPin } from 'lucide-react';
+import Image from 'next/image'
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
+    <main className='w-full flex flex-col'>
+      <section className='relative h-screen flex flex-row items-end m-4 p-12'>
         <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
+          src="/hero.jpg"
+          fill={true}
+          alt=""
+          className='-z-10'
         />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+        <div className='flex flex-col gap-8 text-white'>
+          <h1 className='font-inter-tight text-7xl font-semibold'>
+            Discover Turkey with Ar Rahah - Your Trusted Muslim-Friendly Travel Partner
+          </h1>
+          <div className='font-albert-sans text-2xl max-w-6xl'>
+            Embark on our exclusive 10-day halal-certified journey through Turkey — a land where faith, history, and breathtaking landscapes converge. From Istanbul's majestic mosques to the ancient wonders of Cappadocia, Ar Rahah curates every moment with your values in mind. Join travelers from around the world on an unforgettable adventure steeped in Islamic heritage and cultural discovery.
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <div className='flex flex-row items-center justify-center font-inter-tight font-semibold text-xl bg-white rounded-full min-w-max px-12 py-6'>
+          10 Days Turkey Exploration Trip
+          <div className='flex flex-row'>
+            <ChevronRight />
+          </div>
+        </div>
+      </section>
+      <section className='w-full flex flex-col lg:flex-row justify-between p-4 sm:p-12 xl:p-24 gap-10 xl:gap-20 2xl:p-32'>
+        <div className='w-full h-fit lg:max-w-[456px] 2xl:max-w-[646px] flex flex-col gap-8 xl:gap-14'>
+          <div className='flex flex-col gap-8'>
+            <h2 className='font-inter-tight font-semibold text-[32px] lg:text-4xl xl:text-5xl leading-snug'>
+              Ar Rahah - 10 Days Turkey Exploration: Culture, History, and Spirituality
+            </h2>
+            <div className='flex flex-col lg:flex-row gap-8 md:gap-4 font-albert-sans text-lg'>
+              <div className='flex flex-row gap-2'><MapPin /> Turkey</div>
+              <div className='flex flex-row gap-2'><CalendarDays /> Oct 15, 2025 - Oct 24, 2025</div>
+            </div>
+          </div>
+          <div className='w-full flex flex-row items-center justify-between gap-4 max-w-xl'>
+            <div className='w-fit flex flex-col gap-2 font-albert-sans text-lg'>
+              <div className='whitespace-nowrap'>Starting from</div>
+              <div className='text-2xl sm:text-3xl xl:text-4xl'>$9,000</div>
+              <div className='whitespace-nowrap'>Per Person</div>
+            </div>
+            <div className='border border-black w-full h-0'></div>
+            <div className='w-fit flex flex-col gap-2 font-albert-sans text-lg'>
+              <div>To</div>
+              <div className='text-2xl sm:text-3xl xl:text-4xl'>$19,000</div>
+              <div className='whitespace-nowrap'>Per Person</div>
+            </div>
+          </div>
+          <div className='hidden lg:flex w-fit flex-row items-center justify-between gap-4 px-6 py-6 font-inter-tight text-lg text-white bg-black rounded-full'>
+            See more details
+            <ChevronRight />
+          </div>
+        </div>
+        <div className='basis-1/2 w-full h-fit grid grid-cols-2 sm:grid-cols-2 2xl:grid-cols-[minmax(256px,2fr)_1fr] grid-rows-2 gap-2 md:gap-4'>
+          <div className='relative h-full w-full row-span-2'>
+            <Image
+              className='rounded-lg md:rounded-2xl'
+              src='/mosque.jpg'
+              objectFit='cover'
+              alt=''
+              fill
+            />
+          </div>
+          <div className='relative h-full aspect-square'>
+            <Image
+              className='rounded-lg md:rounded-2xl'
+              src='/bird-flying.jpg'
+              objectFit='cover'
+              alt=''
+              fill
+            />
+          </div>
+          <div className='relative h-full aspect-square'>
+            <Image
+              className='rounded-lg md:rounded-2xl'
+              src='/hot-balloons.jpg'
+              objectFit='cover'
+              alt=''
+              fill
+            />
+          </div>
+        </div>
+        <div className='flex lg:hidden w-full flex-row justify-center items-center gap-4 px-4 py-4 font-inter-tight text-lg text-white bg-black rounded-full'>
+          See more details
+          <ChevronRight />
+        </div>
+      </section>
+      <section className='bg-[#F7F7F7] flex flex-col w-full items-center gap-20 p-4 sm:p-12 xl:p-24 2xl:p-32'>
+        <div className='flex flex-col items-center gap-8'>
+          <div className='bg-[#EFEFEF] w-fit font-inter-tight py-3 px-5 rounded-full'>Spirtual Adventure</div>
+          <h2 className='font-inter-tight font-semibold text-6xl'>Top Tours to Spark Your Wanderlust</h2>
+          <p className='font-albert-sans text-lg'>Explore our top-rated tours, crafted with powerful stories, unforgettable sights, and soul-stirring experiences.</p>
+        </div>
+        <TripsCarousel />
+      </section>
+      <section className='w-full py-14 px-32'>
+        <div className='relative w-full aspect-video flex flex-col justify-center items-center gap-6'>
           <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
+            src='/hot-balloons.jpg'
+            alt=""
+            objectFit='cover'
+            fill
+            className='rounded-[60px] -z-10'
           />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+          <CirclePlay className='size-32' color='white' strokeWidth='1px' />
+          <div className='text-white font-inter-tight font-semibold text-4xl'>Explore Turkey with us!</div>
+        </div>
+      </section>
+      <section className='w-full flex flex-col gap-32 p-32'>
+        <div className='flex flex-row justify-between gap-32'>
+          <div className='flex flex-col gap-8'>
+            <div className='bg-[#EFEFEF] w-fit font-inter-tight py-3 px-5 rounded-full'>Our Destinations</div>
+            <h2 className='font-inter-tight font-semibold text-6xl'>Your next favorite place awaits</h2>
+          </div>
+          <div className='flex flex-col gap-7 max-w-[822px] place-self-end'>
+            <p>Get the best value for your halal-friendly travel — enjoy exclusive discounts, seasonal offers, and curated getaways designed with Muslim travelers in mind.</p>
+            <div className='w-fit bg-black rounded-full py-6 px-8 text-white font-inter-tight text-lg font-semibold'>Learn more</div>
+          </div>
+        </div>
+        <DestinationCarousel />
+      </section>
+      <section className='w-full flex flex-col p-32 gap-32 bg-[#F7F7F7]'>
+        <div className='flex flex-row justify-between gap-32'>
+          <div className='flex flex-col gap-8'>
+            <div className='bg-[#EFEFEF] w-fit font-inter-tight py-3 px-5 rounded-full'>Signature Experiences</div>
+            <h2 className='font-inter-tight font-semibold text-6xl'>What's so special about this?</h2>
+          </div>
+          <div className='flex flex-col gap-7 place-self-end'>
+            <div className='w-fit bg-black rounded-full py-6 px-8 text-white font-inter-tight text-lg font-semibold'>Learn more</div>
+          </div>
+        </div>
+        <ExperienceCarousel />
+      </section>
+      <section className='w-full'>
+        <div className='flex flex-col items-center gap-8 p-32'>
+          <div className='bg-[#EFEFEF] w-fit font-inter-tight py-3 px-5 rounded-full'>Loyalty Speaks</div>
+          <h2 className='font-inter-tight font-semibold text-6xl'>Testimonials</h2>
+          <Testimonials />
+        </div>
+      </section>
+    </main>
   );
 }
