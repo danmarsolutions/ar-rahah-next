@@ -3,8 +3,6 @@ import { Inter_Tight, Albert_Sans, Galada } from "next/font/google";
 import "./globals.css";
 import Link from "next/link";
 import Image from 'next/image'
-import Header from "@/components/ui/header";
-
 
 const interTight = Inter_Tight({
   variable: "--font-inter-tight",
@@ -37,7 +35,6 @@ export default function RootLayout({
       <body
         className={`${interTight.variable} ${albertSans.variable} ${galada.variable} flex flex-col w-full antialiased box-border`}
       >
-        {/* <Header /> */}
         {children}
         {/* Uncover unique destinations */}
         <section className="relative w-full h-[700px] flex flex-col items-center justify-center text-white p-3.5 md:p-4">
