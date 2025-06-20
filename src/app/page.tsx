@@ -1,5 +1,6 @@
 import DestinationCarousel from '@/components/ui/destination-carousel';
 import ExperienceCarousel from '@/components/ui/experience-carousel';
+import Header from '@/components/ui/header';
 import Testimonials from '@/components/ui/testimonials';
 import TripsCarousel from '@/components/ui/trips-carousel';
 import { CalendarDays, ChevronRight, CirclePlay, MapPin } from 'lucide-react';
@@ -16,6 +17,7 @@ export default function Home() {
           alt=""
           className='-z-10 rounded-xl'
         />
+        <Header isHome />
         <div className='flex flex-col gap-8 text-white'>
           <h1 className='font-inter-tight text-center sm:text-left text-3xl sm:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-semibold'>
             Discover Turkey with <span className='whitespace-nowrap'>Ar Rahah</span> - Your Trusted Muslim-Friendly Travel Partner

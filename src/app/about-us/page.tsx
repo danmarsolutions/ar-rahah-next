@@ -1,8 +1,10 @@
+import Header from "@/components/ui/header";
 import Image from "next/image";
 
 export default function AboutUs() {
     return (
         <main className="w-full flex flex-col">
+            <Header />
             {/* Purpose */}
             <section className="w-full h-fit grid grid-cols-1 xl:grid-cols-[min-content_2fr] grid-rows-[auto_auto_auto] gap-y-6 md:gap-y-12 gap-x-10 2xl:gap-x-18 p-4 py-14 sm:p-12 xl:p-20">
                 <h1 className="w-full row-start-2 xl:row-start-1 col-span-full font-inter-tight font-semibold text-center md:text-left text-4xl md:text-7xl xl:text-8xl 2xl:text-9xl">Where Purpose Meets Exploration</h1>

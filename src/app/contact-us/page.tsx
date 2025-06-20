@@ -1,9 +1,11 @@
 import ContactForm from "@/components/ui/contact-form";
+import Header from "@/components/ui/header";
 import { Mail, MapPin, Phone } from "lucide-react";
 
 export default function ContactUs() {
     return (
         <main className="w-full flex flex-col items-center">
+            <Header />
             <section className="w-full flex flex-col gap-20 px-4 md:px-8 lg:px-38 2xl:px-56 py-16 lg:py-32">
                 <div className="flex flex-col items-center gap-8">
                     <h1 className="w-full text-4xl md:text-6xl md:text-center font-inter-tight font-semibold">Let's Get In Touch</h1>

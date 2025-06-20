@@ -1,3 +1,4 @@
+import Header from "@/components/ui/header";
 import PackageSelect from "@/components/ui/package-select";
 import TourPlanAccordion from "@/components/ui/tour-plan-accordion";
 import { CalendarDays, CircleCheck, CircleX, Heart, MapPin } from "lucide-react";
@@ -8,6 +9,7 @@ export default function Package() {
 
     return (
         <main className="w-full">
+            <Header />
             <section className="w-full flex flex-col gap-8 p-4 sm:p-8 md:p-10 lg:p-14">
                 <h1 className="max-w-[1280px] leading-[1.25] font-inter-tight font-medium text-4xl md:text-5xl">Ar Rahah - 10 Days Turkey Exploration: Culture, History, and Spirituality</h1>
                 <div className="w-full flex flex-col lg:flex-row gap-8 lg:gap-0 justify-between items-center">
