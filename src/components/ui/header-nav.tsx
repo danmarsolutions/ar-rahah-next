@@ -159,7 +159,7 @@ function NavMenu() {
                         )) || (
                             <NavigationMenuItem key={navItem.id}>
                                 <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
-                                    <Link className="bg-transparent !rounded-full" href="/">{navItem.displayText}</Link>
+                                    <Link className="bg-transparent !rounded-full" href={navItem.path || '/'}>{navItem.displayText}</Link>
                                 </NavigationMenuLink>
                             </NavigationMenuItem>
                         )

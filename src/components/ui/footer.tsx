@@ -39,7 +39,7 @@ export default function Footer() {
                     <div className="w-full md:max-w-[180px] flex flex-col gap-6 2xl:gap-8">
                         <h4 className="text-2xl font-medium font-inter-tight">About Us</h4>
                         <div className="flex flex-col gap-2 text-white/50 text-lg">
-                            <Link className="cursor-pointer hover:underline" href='/'>Our Story</Link>
+                            <Link className="cursor-pointer hover:underline" href='/about-us'>Our Story</Link>
                             <Link className="cursor-pointer hover:underline" href='/'>Testimonials</Link>
                             <Link className="cursor-pointer hover:underline" href='/'>Sustainability</Link>
                         </div>
@@ -48,7 +48,7 @@ export default function Footer() {
                         <h4 className="text-2xl font-medium font-inter-tight">Support</h4>
                         <div className="flex flex-col gap-2 text-white/50 text-lg">
                             <Link className="cursor-pointer hover:underline" href='/'>Help</Link>
-                            <Link className="cursor-pointer hover:underline" href='/'>Contact Us</Link>
+                            <Link className="cursor-pointer hover:underline" href='/contact-us'>Contact Us</Link>
                             <Link className="cursor-pointer hover:underline" href='/'>Travel FAQs</Link>
                             <Link className="cursor-pointer hover:underline" href='/'>Group Bookings</Link>
                         </div>
