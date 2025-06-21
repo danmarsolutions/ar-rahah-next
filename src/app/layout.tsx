@@ -34,7 +34,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${interTight.variable} ${albertSans.variable} ${galada.variable} flex flex-col w-full antialiased box-border`}
+        className={`${interTight.variable} ${albertSans.variable} ${galada.variable} flex flex-col mx-auto w-full max-w-[1920px] antialiased box-border`}
       >
         {children}
         {/* Uncover unique destinations */}
