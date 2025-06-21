@@ -18,8 +18,8 @@ export default function Header({ isHome }: { isHome?: boolean }) {
             <HeaderNav />
             {/* Buttons */}
             <div className="hidden lg:flex flex-row items-center lg:gap-4 font-inter-tight text-lg">
-                <div className={cn("flex flex-row gap-2 items-center bg-white border border-black rounded-full py-2 lg:py-3 px-4 lg:px-6", isHome && 'bg-white/30 text-white border-white')}><Globe size='1.25em' /> ENG</div>
-                <div className={cn("flex flex-row gap-2 items-center bg-black text-white border border-black rounded-full py-2 lg:py-3 px-4 lg:px-6", isHome && 'bg-white/30 text-white border-white')}><Phone size='1.25em' /> Contact Us</div>
+                <div className={cn("flex flex-row gap-2 items-center bg-white border border-black rounded-full py-2 lg:py-3 px-4 lg:px-6 cursor-pointer select-none hover:bg-black/80 hover:text-white", isHome && 'bg-white/30 text-white border-white')}><Globe size='1.25em' /> ENG</div>
+                <div className={cn("flex flex-row gap-2 items-center bg-black text-white border border-black rounded-full py-2 lg:py-3 px-4 lg:px-6 cursor-pointer select-none hover:bg-black/80", isHome && 'bg-white/30 text-white border-white')}><Phone size='1.25em' /> Contact Us</div>
             </div>
         </header>
     )
