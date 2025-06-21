@@ -7,14 +7,14 @@ export default function Header({ isHome }: { isHome?: boolean }) {
     return (
         <header className={cn("w-full flex flex-row justify-between items-center px-4 sm:px-8 py-5", isHome && 'absolute top-0 left-0')}>
             {/* Logo */}
-            <div className="flex flex-row items-center gap-2 sm:gap-4">
+            <Link href='/' className="flex flex-row items-center gap-2 sm:gap-4">
                 <img
                     src='/logo.png'
                     alt="Ar-Rahah logo"
                     className="aspect-square w-10 sm:w-16 lg:w-24"
                 />
                 <span className={cn("font-galada h-fit text-2xl sm:text-3xl lg:text-4xl leading-none", isHome && 'text-white')}>AR Rahah</span>
-            </div>
+            </Link>
             {/* Nav Link */}
             <HeaderNav />
             {/* Buttons */}
