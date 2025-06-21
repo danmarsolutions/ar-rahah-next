@@ -6,6 +6,7 @@ export default function ContactUs() {
     return (
         <main className="w-full flex flex-col items-center">
             <Header />
+            {/* Get in Touch */}
             <section className="w-full flex flex-col gap-20 px-4 md:px-8 lg:px-38 2xl:px-56 py-16 lg:py-32">
                 <div className="flex flex-col items-center gap-8">
                     <h1 className="w-full text-4xl md:text-6xl md:text-center font-inter-tight font-semibold">Let's Get In Touch</h1>
@@ -35,6 +36,7 @@ export default function ContactUs() {
                     </div>
                 </div>
             </section>
+            {/* Contact Form */}
             <section className="w-full flex flex-col gap-15 lg:gap-20 px-4 md:px-8 lg:px-38 2xl:px-56 py-16 lg:py-32">
                 <h2 className="font-inter-tight text-[32px] lg:text-5xl font-semibold">Or fill this form below to get inquired!</h2>
                 <ContactForm />

@@ -9,6 +9,7 @@ import Image from 'next/image'
 export default function Home() {
   return (
     <main className='w-full flex flex-col'>
+      {/* Hero */}
       <section className='relative h-screen max-h-[720px] lg:max-h-[1080px] flex flex-col justify-end lg:flex-row gap-12 lg:items-end p-6 sm:m-4 sm:p-12'>
         <Image
           src="/hero.jpg"
@@ -33,6 +34,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+      {/* Ar Raha - 10 Days Turkey */}
       <section className='w-full flex flex-col lg:flex-row justify-between p-4 py-14 sm:p-12 xl:p-24 gap-10 xl:gap-20 2xl:p-32'>
         <div className='w-full h-fit lg:max-w-[456px] 2xl:max-w-[646px] flex flex-col gap-8 xl:gap-14'>
           <div className='flex flex-col gap-8'>
@@ -96,6 +98,7 @@ export default function Home() {
           <ChevronRight />
         </div>
       </section>
+      {/* Spirtual Adventure */}
       <section className='bg-[#F7F7F7] flex flex-col w-full items-center gap-20 p-4 sm:p-12 xl:p-24 2xl:p-32'>
         <div className='flex flex-col items-center gap-8'>
           <div className='bg-[#EFEFEF] w-fit font-inter-tight py-3 px-5 rounded-full'>Spirtual Adventure</div>
@@ -104,6 +107,7 @@ export default function Home() {
         </div>
         <TripsCarousel />
       </section>
+      {/* Video */}
       <section className='w-full py-14 px-4 sm:px-12 xl:px-24 2xl:px-32'>
         <div className='relative w-full aspect-square sm:aspect-video max-h-[90vh] flex flex-col justify-center items-center gap-2 sm:gap-6'>
           <Image
@@ -117,6 +121,7 @@ export default function Home() {
           <div className='text-white font-inter-tight font-semibold text-2xl sm:text-4xl'>Explore Turkey with us!</div>
         </div>
       </section>
+      {/* Our Destinations */}
       <section className='w-full flex flex-col gap-10 xl:gap-20 p-4 py-14 sm:p-12 xl:p-24 2xl:p-32'>
         <div className='flex flex-col lg:flex-row justify-between gap-14 sm:gap-6 lg:gap-16 xl:gap-32'>
           <div className='flex flex-col items-center lg:items-start gap-14 lg:gap-8'>
@@ -130,6 +135,7 @@ export default function Home() {
         </div>
         <DestinationCarousel />
       </section>
+      {/* Signature Experiences */}
       <section className='w-full flex flex-col lg:gap-32 bg-[#F7F7F7] p-4 py-14 sm:p-12 xl:p-24 2xl:p-32'>
         <div className='flex flex-col lg:flex-row justify-between gap-14 sm:gap-6 lg:gap-16 xl:gap-32'>
           <div className='flex flex-col items-center lg:items-start gap-14 lg:gap-8'>
@@ -143,6 +149,7 @@ export default function Home() {
         </div>
         <ExperienceCarousel />
       </section>
+      {/* Testimonials */}
       <section className='w-full flex flex-col items-center gap-8 p-4 py-14 sm:p-12 xl:p-24 2xl:p-32'>
         <div className='bg-[#EFEFEF] w-fit font-inter-tight py-3 px-5 rounded-full'>Loyalty Speaks</div>
         <h2 className='font-inter-tight font-semibold text-[32px] lg:text-5xl xl:text-6xl'>Testimonials</h2>

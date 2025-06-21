@@ -10,6 +10,7 @@ export default function Package() {
     return (
         <main className="w-full">
             <Header />
+            {/* Ar Rahah - 10 Days */}
             <section className="w-full flex flex-col gap-8 p-4 sm:p-8 md:p-10 lg:p-14">
                 <h1 className="max-w-[1280px] leading-[1.25] font-inter-tight font-medium text-4xl md:text-5xl">Ar Rahah - 10 Days Turkey Exploration: Culture, History, and Spirituality</h1>
                 <div className="w-full flex flex-col lg:flex-row gap-8 lg:gap-0 justify-between items-center">
@@ -80,6 +81,7 @@ export default function Package() {
                     </div>
                 </div>
             </section>
+            {/* About Turkey Trip */}
             <section className="w-full grid grid-cols-1 lg:grid-cols-2 grid-rows-[1fr_max-content] lg:grid-rows-1 gap-20 lg:gap-10 2xl:gap-20 p-4 py-14 sm:p-12 xl:p-24 2xl:p-32">
                 <div className="relative w-full row-start-2 lg:row-auto min-h-[350px] sm:min-h-[420px] ">
                     <Image
@@ -98,6 +100,7 @@ export default function Package() {
                     <p>This is not just a holiday—it is an exploration of faith, history, and civilization. It is a journey of learning, reflection, and inspiration. As you walk through the lands that have witnessed the rise and fall of empires, you will gain a deeper appreciation for the legacies that continue to shape our world today.</p>
                 </div>
             </section>
+            {/* Inclusion & Exlusion Table */}
             <section className="w-full flex flex-col gap-15 lg:gap-20 p-4 py-14 sm:p-12 xl:p-24 2xl:p-32">
                 <div className='flex flex-col items-center gap-8'>
                     <div className='bg-[#EFEFEF] text-[14px] sm:text-base w-fit font-inter-tight py-3 px-5 rounded-full'>Inclusion & Exclusion</div>
@@ -156,6 +159,7 @@ export default function Package() {
                     </tbody>
                 </table>
             </section>
+            {/* Tour Plan */}
             <section className="flex flex-col gap-15 lg:gap-20 p-4 py-14 sm:p-12 xl:p-24 2xl:p-32">
                 <div className='flex flex-col gap-6 lg:gap-8'>
                     <div className='bg-[#EFEFEF] text-[14px] sm:text-base w-fit font-inter-tight py-3 px-5 rounded-full'>Tour Plan</div>
