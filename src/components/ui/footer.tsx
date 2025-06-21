@@ -57,7 +57,7 @@ export default function Footer() {
                 {/* Book Button */}
                 <Link href='/' className='w-full md:w-fit h-fit row-start-2 md:col-start-1 lg:col-start-2 md:row-start-2 md:row-end-3 lg:row-start-1 lg:row-end-2 justify-self-end flex flex-row items-center justify-center gap-2 px-8 py-3 md:py-6 bg-white text-black text-lg font-semibold rounded-full'>
                     <span>Book a Vacation</span>
-                    <img className='w-[1.5em] h-fit' src='/black-triple-chevron.svg' />
+                    <img className='w-[1.5em] h-fit' src='/icons/black-triple-chevron.svg' />
                 </Link>
                 {/* Images */}
                 <div className="w-full md:w-[420px] aspect-[5/4.5] lg:place-self-end row-start-3 md:row-start-2 md:row-end-3 md:col-start-1 lg:col-start-2 lg:row-start-1 lg:row-end-3 lg:row-span-2 grid grid-cols-3 grid-rows-3 gap-2 ">
@@ -65,7 +65,7 @@ export default function Footer() {
                         <div key={index} className="relative">
                             <Image
                                 className="rounded-lg"
-                                src={`/f${index + 1}.png`}
+                                src={`/footer/f${index + 1}.png`}
                                 alt=""
                                 objectFit="cover"
                                 fill

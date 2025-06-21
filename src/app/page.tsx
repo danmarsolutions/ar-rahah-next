@@ -30,7 +30,7 @@ export default function Home() {
         </div>
         <Link href='/package' className='w-fit min-w-max self-center sm:self-end flex flex-row items-center justify-center gap-4 font-inter-tight font-semibold sm:text-xl bg-white rounded-full px-6 py-3 sm:py-4 xl:px-12 xl:py-6 cursor-pointer'>
           10 Days Turkey Exploration Trip
-          <img className='w-[1.5em] h-fit' src='/black-triple-chevron.svg' />
+          <img className='w-[1.5em] h-fit' src='/icons/black-triple-chevron.svg' />
         </Link>
       </section>
       {/* Ar Raha - 10 Days Turkey */}
@@ -131,7 +131,7 @@ export default function Home() {
             <p className='text-center lg:text-left'>Get the best value for your halal-friendly travel — enjoy exclusive discounts, seasonal offers, and curated getaways designed with Muslim travelers in mind.</p>
             <Link href='/' className='w-full flex flex-row items-center justify-center gap-4 sm:w-fit bg-black rounded-full py-3 lg:py-4 xl:py-6 px-8 text-white text-center font-inter-tight sm:text-lg font-semibold cursor-pointer'>
               Learn more
-              <img className='w-[1.75em] h-fit' src='/triple-chevron.svg' />
+              <img className='w-[1.75em] h-fit' src='/icons/triple-chevron.svg' />
             </Link>
           </div>
         </div>
@@ -146,7 +146,7 @@ export default function Home() {
           </div>
           <Link href='/' className='w-fit h-fit hidden place-self-end lg:flex flex-row items-center gap-4 sm:w-fit bg-black rounded-full py-3 lg:py-4 xl:py-6 px-8 text-white text-center font-inter-tight sm:text-lg font-semibold cursor-pointer'>
             Learn more
-            <img className='w-[1.5em] h-fit' src='/triple-chevron.svg' />
+            <img className='w-[1.5em] h-fit' src='/icons/triple-chevron.svg' />
           </Link>
         </div>
         <ExperienceCarousel />

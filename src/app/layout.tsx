@@ -52,7 +52,7 @@ export default function RootLayout({
             <p className="font-medium text-lg text-center md:mx-18 lg:mx-32">Lorem ipsum dolor sit amet consectetur. Ac turpis et amet facilisis purus egestas enim ante. Porttitor nunc semper nunc libero vitae eget. Odio ultricies ornare tristique in erat auctor tellus</p>
             <Link href='/' className='w-full md:w-fit h-fit row-start-2 md:col-start-1 lg:col-start-2 md:row-start-2 md:row-end-3 lg:row-start-1 lg:row-end-2 justify-self-end flex flex-row items-center justify-center gap-2 px-8 py-3 md:py-6 bg-white text-black text-lg font-semibold rounded-full'>
               <span>Book Trip to Turkey</span>
-              <img className='w-[1.5em] h-fit' src='/black-triple-chevron.svg' />
+              <img className='w-[1.5em] h-fit' src='/icons/black-triple-chevron.svg' />
             </Link>
           </div>
         </section>

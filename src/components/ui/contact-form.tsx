@@ -302,7 +302,7 @@ export default function ContactForm() {
                 <Button className="h-fit w-full md:w-fit font-inter-tight font-semibold md:text-2xl rounded-full py-3 lg:py-5 2xl:py-6 md:!px-12 cursor-pointer" type="submit">
                     <div className='flex flex-row items-center justify-center gap-2'>
                         <span>Submit</span>
-                        <img className='w-[1.5em] h-fit' src='/triple-chevron.svg' />
+                        <img className='w-[1.5em] h-fit' src='/icons/triple-chevron.svg' />
                     </div>
                 </Button>
             </form>

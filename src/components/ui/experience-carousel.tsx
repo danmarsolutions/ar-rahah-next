@@ -64,7 +64,7 @@ export default function ExperienceCarousel() {
             </div>
             <button className='w-full self-end flex flex-row gap-4 items-center justify-center lg:hidden sm:w-fit bg-black rounded-full py-3 lg:py-4 xl:py-6 px-8 text-white text-center font-inter-tight sm:text-lg font-semibold'>
                 Learn more
-                <img className='w-[1.75em] h-fit self-center' src='/triple-chevron.svg' />
+                <img className='w-[1.75em] h-fit self-center' src='/icons/triple-chevron.svg' />
             </button>
         </Carousel>
     )
