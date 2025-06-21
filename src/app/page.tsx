@@ -96,14 +96,14 @@ export default function Home() {
           <ChevronRight />
         </div>
       </section>
-      {/* <section className='bg-[#F7F7F7] flex flex-col w-full items-center gap-20 p-4 sm:p-12 xl:p-24 2xl:p-32'>
+      <section className='bg-[#F7F7F7] flex flex-col w-full items-center gap-20 p-4 sm:p-12 xl:p-24 2xl:p-32'>
         <div className='flex flex-col items-center gap-8'>
           <div className='bg-[#EFEFEF] w-fit font-inter-tight py-3 px-5 rounded-full'>Spirtual Adventure</div>
-          <h2 className='font-inter-tight font-semibold text-6xl'>Top Tours to Spark Your Wanderlust</h2>
-          <p className='font-albert-sans text-lg'>Explore our top-rated tours, crafted with powerful stories, unforgettable sights, and soul-stirring experiences.</p>
+          <h2 className='font-inter-tight font-semibold text-[32px] text-center leading-none lg:text-left lg:text-5xl xl:text-6xl'>Top Tours to Spark Your Wanderlust</h2>
+          <p className='font-albert-sans text-lg text-center lg:text-left'>Explore our top-rated tours, crafted with powerful stories, unforgettable sights, and soul-stirring experiences.</p>
         </div>
         <TripsCarousel />
-      </section> */}
+      </section>
       <section className='w-full py-14 px-4 sm:px-12 xl:px-24 2xl:px-32'>
         <div className='relative w-full aspect-square sm:aspect-video max-h-[90vh] flex flex-col justify-center items-center gap-2 sm:gap-6'>
           <Image

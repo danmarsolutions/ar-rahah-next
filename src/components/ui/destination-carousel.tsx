@@ -13,10 +13,28 @@ import Image from "next/image"
 
 
 import { useEffect, useState } from "react";
+import ProgressBar from "./carousel-progress-bar";
 
 export default function DestinationCarousel() {
 
     const [api, setApi] = useState<CarouselApi>();
+    const [current, setCurrent] = useState(0)
+    const [count, setCount] = useState(0)
+
+    useEffect(() => {
+
+        if (!api) {
+            return
+        }
+
+        setCount(api.scrollSnapList().length)
+        setCurrent(api.selectedScrollSnap())
+
+        api.on("select", () => {
+            setCurrent(api.selectedScrollSnap())
+        })
+
+    }, [api])
 
     return (
         <Carousel
@@ -36,12 +54,8 @@ export default function DestinationCarousel() {
                 ))}
             </CarouselContent>
             <div className="w-full flex flex-row items-center justify-between">
-                {/* <div className="relative w-96 h-2 bg-[#EFEFEF] grid grid-cols-4 grid-rows-1 rounded-full">
-                    <div className={cn("relative h-full rounded-full", 'col-span-1')}>
-                        <div className="absolute bg-black w-[100px] h-full transition-all duration-1000 ease-in-out transform"></div>
-                    </div>
-                </div> */}
-                <div className="flex flex-row gap-2.5">
+                <ProgressBar className="hidden md:block md:max-w-xs md:col-span-1 self-center" currentItem={current + 1} totalItems={count} />
+                <div className="w-full flex flex-row justify-center md:justify-end gap-2.5">
                     <div onClick={() => api?.scrollPrev()} className="flex flex-row items-center justify-center size-10 rounded-full bg-[#EFEFEF]">
                         <ChevronLeft size={24} />
                     </div>
