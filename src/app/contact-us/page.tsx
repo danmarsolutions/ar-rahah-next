@@ -9,7 +9,7 @@ export default function ContactUs() {
             {/* Get in Touch */}
             <section className="w-full flex flex-col gap-20 px-4 md:px-8 lg:px-38 2xl:px-56 py-16 lg:py-32">
                 <div className="flex flex-col items-center gap-8">
-                    <h1 className="w-full text-4xl md:text-6xl md:text-center font-inter-tight font-semibold">Let's Get In Touch</h1>
+                    <h1 className="w-full text-4xl md:text-6xl md:text-center font-inter-tight font-semibold">Let&apos;s Get In Touch</h1>
                     <p className="md:text-2xl md:text-center font-albert-sans max-w-[1200px]">We would love to hear from you! Whether you have questions about a tour, want to arrange a private group, or need special accommodations (dietary or otherwise), our team is here to assist. Insha’Allah, we’ll ensure your travel plans are smooth and tailored to your needs.</p>
                 </div>
                 <div className="flex flex-col gap-12 md:gap-0 md:flex-row justify-between font-albert-sans text-lg md:text-2xl">

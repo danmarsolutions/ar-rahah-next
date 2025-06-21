@@ -24,7 +24,7 @@ export default function Home() {
             Discover Turkey with <span className='whitespace-nowrap'>Ar Rahah</span> - Your Trusted Muslim-Friendly Travel Partner
           </h1>
           <div className='font-albert-sans text-center sm:text-left md:text-lg xl:text-2xl max-w-6xl'>
-            Embark on our exclusive 10-day halal-certified journey through Turkey — a land where faith, history, and breathtaking landscapes converge. From Istanbul's majestic mosques to the ancient wonders of Cappadocia, Ar Rahah curates every moment with your values in mind. Join travelers from around the world on an unforgettable adventure steeped in Islamic heritage and cultural discovery.
+            Embark on our exclusive 10-day halal-certified journey through Turkey — a land where faith, history, and breathtaking landscapes converge. From Istanbul&apos;s majestic mosques to the ancient wonders of Cappadocia, Ar Rahah curates every moment with your values in mind. Join travelers from around the world on an unforgettable adventure steeped in Islamic heritage and cultural discovery.
           </div>
         </div>
         <Link href='/package' className='w-fit min-w-max self-center sm:self-end flex flex-row items-center justify-center gap-4 font-inter-tight font-semibold sm:text-xl bg-white rounded-full px-6 py-3 sm:py-4 xl:px-12 xl:py-6 cursor-pointer'>
@@ -137,7 +137,7 @@ export default function Home() {
         <div className='flex flex-col lg:flex-row justify-between '>
           <div className='flex flex-col items-center lg:items-start gap-8'>
             <div className='bg-[#EFEFEF] w-fit font-inter-tight py-3 px-5 rounded-full'>Signature Experiences</div>
-            <h2 className='font-inter-tight font-semibold text-[32px] text-center lg:text-left lg:text-5xl xl:text-6xl'>What's so special about this?</h2>
+            <h2 className='font-inter-tight font-semibold text-[32px] text-center lg:text-left lg:text-5xl xl:text-6xl'>What&apos;s so special about this?</h2>
           </div>
           <Link href='/' className='w-fit h-fit hidden place-self-end lg:flex flex-row items-center gap-4 sm:w-fit bg-black rounded-full py-3 lg:py-4 xl:py-6 px-8 text-white text-center font-inter-tight sm:text-lg font-semibold cursor-pointer'>
             Learn more

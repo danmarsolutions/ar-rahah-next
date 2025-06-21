@@ -5,7 +5,6 @@ import {
     CarouselContent,
     CarouselItem,
 } from "@/components/ui/carousel"
-import { cn } from "@/lib/utils";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import Image from "next/image"
 

@@ -292,7 +292,7 @@ export default function ContactForm() {
                                         <Checkbox checked={field.value} onCheckedChange={field.onChange} />
                                     </FormControl>
                                     <FormLabel className="font-normal font-albert-sans leading-5 sm:leading-4">
-                                        I'd like to receive trip updates, offers, and travel inspiration from Ar Rahah. (Optional for mailing list signup)
+                                        I&apos;d like to receive trip updates, offers, and travel inspiration from Ar Rahah. (Optional for mailing list signup)
                                     </FormLabel>
                                 </FormItem>
                             )

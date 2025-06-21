@@ -17,7 +17,7 @@ export default function AboutUs() {
                     />
                 </div>
                 <div className="w-full md:text-2xl font-albert-sans text-center md:text-left col-start-1 row-start-3 xl:row-span-full xl:row-start-2 flex flex-col gap-4 xl:min-w-[500px] 2xl:min-w-[624px]">
-                    <p>At Ar Rahah, we believe travel is more than just a change in scenery — it's a spiritual revival. Inspired by our Islamic tradition and heritage, we craft experiences that elevate the soul, enrich the mind, and connect you with the legacies of the past.</p>
+                    <p>At Ar Rahah, we believe travel is more than just a change in scenery — it&apos;s a spiritual revival. Inspired by our Islamic tradition and heritage, we craft experiences that elevate the soul, enrich the mind, and connect you with the legacies of the past.</p>
                     <p>Our journeys are designed for Muslim travelers who seek deeper meaning, halal assurance, and authentic cultural encounters. Whether you’re walking in the footsteps of the Ottomans in Istanbul or reflecting in the silence of Andalusia’s ancient masjids, every trip with Ar Rahah is a step toward spiritual growth and mindful discovery.</p>
                 </div>
             </section>
@@ -67,7 +67,7 @@ export default function AboutUs() {
                 <div className="basis-1/2 w-full flex flex-col order-1 lg:order-2 gap-20">
                     <div className="flex flex-col gap-8">
                         <h2 className="font-inter-tight text-3xl sm:text-5xl md:text-6xl font-semibold">What Sets Us Apart</h2>
-                        <p className="font-albert-sans text-lg font-light">At Ar Rahah, we don't just take you places — we take you deeper. Our journeys are carefully crafted to reflect Islamic values at every stage, offering more than just a vacation. From the moment you join us, you're part of something meaningful — a travel experience designed around purpose, faith, and discovery.</p>
+                        <p className="font-albert-sans text-lg font-light">At Ar Rahah, we don&apos;t just take you places — we take you deeper. Our journeys are carefully crafted to reflect Islamic values at every stage, offering more than just a vacation. From the moment you join us, you&apos;re part of something meaningful — a travel experience designed around purpose, faith, and discovery.</p>
                     </div>
                     <div className="relative w-full h-full aspect-square lg:aspect-auto">
                         <Image
@@ -83,7 +83,7 @@ export default function AboutUs() {
             <section className="w-full flex flex-col items-center gap-14 md:gap-20 p-4 py-14 sm:p-12 xl:p-24 2xl:p-30">
                 <div className="w-full flex flex-col items-center gap-8">
                     <h2 className="font-inter-tight font-semibold text-3xl sm:text-5xl md:text-6xl text-center">A Journey of Reflection</h2>
-                    <p className="font-albert-sans text-2xl md:text-3xl text-center max-w-[1356px]">Whether you're seeking a spiritual reset, historical inspiration, or a memorable family adventure, Ar Rahah invites you to discover the world with purpose.
+                    <p className="font-albert-sans text-2xl md:text-3xl text-center max-w-[1356px]">Whether you&apos;re seeking a spiritual reset, historical inspiration, or a memorable family adventure, Ar Rahah invites you to discover the world with purpose.
                         Because with the right intention, every journey becomes an act of worship.</p>
                 </div>
                 <div className="w-full h-[300px] sm:h-[480px] lg:h-[512px] 2xl:h-[720px] relative">

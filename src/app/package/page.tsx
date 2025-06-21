@@ -99,7 +99,7 @@ export default function Package() {
             <section className="w-full flex flex-col gap-15 lg:gap-20 p-4 py-14 sm:p-12 xl:p-24 2xl:p-32">
                 <div className='flex flex-col items-center gap-8'>
                     <div className='bg-[#EFEFEF] text-[14px] sm:text-base w-fit font-inter-tight py-3 px-5 rounded-full'>Inclusion & Exclusion</div>
-                    <h2 className='font-inter-tight font-semibold text-center text-[32px] lg:text-5xl xl:text-6xl'>What's Covered in your Experience?</h2>
+                    <h2 className='font-inter-tight font-semibold text-center text-[32px] lg:text-5xl xl:text-6xl'>What&apos;s Covered in your Experience?</h2>
                 </div>
                 <table className="w-full overflow-hidden table-fixed border-separate">
                     <thead className="h-[80px] sm:h-[100px] xl:h-[150px] text-white bg-black">
