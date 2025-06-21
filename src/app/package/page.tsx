@@ -39,10 +39,8 @@ export default function Package() {
                 <div className='w-full min-h-[360px] sm:min-h-[480px] md:min-h-[680px] grid grid-cols-[minmax(180px,1fr)_minmax(100px,180px)] sm:grid-cols-[minmax(316px,1fr)_minmax(200px,300px)] md:grid-cols-[1fr_300px] xl:grid-cols-[1fr_500px] grid-rows-2 gap-2 sm:gap-4'>
                     <div className='relative row-span-2 h-full w-full flex flex-col gap-6 justify-end lg:p-6 xl:p-12'>
                         <Image
-                            className='rounded-lg md:rounded-2xl -z-10'
+                            className='rounded-lg md:rounded-2xl -z-10 object-cover object-bottom'
                             src='/mosque.jpg'
-                            objectFit='cover'
-                            objectPosition="bottom"
                             alt=''
                             fill
                         />
@@ -63,18 +61,16 @@ export default function Package() {
                     </div>
                     <div className='relative h-full w-full'>
                         <Image
-                            className='rounded-lg md:rounded-2xl'
+                            className='rounded-lg md:rounded-2xl object-cover'
                             src='/bird-flying.jpg'
-                            objectFit='cover'
                             alt=''
                             fill
                         />
                     </div>
                     <div className='relative h-full w-full'>
                         <Image
-                            className='rounded-lg md:rounded-2xl'
+                            className='rounded-lg md:rounded-2xl object-cover'
                             src='/hot-balloons.jpg'
-                            objectFit='cover'
                             alt=''
                             fill
                         />
@@ -85,10 +81,9 @@ export default function Package() {
             <section className="w-full grid grid-cols-1 lg:grid-cols-2 grid-rows-[1fr_max-content] lg:grid-rows-1 gap-20 lg:gap-10 2xl:gap-20 p-4 py-14 sm:p-12 xl:p-24 2xl:p-32">
                 <div className="relative w-full row-start-2 lg:row-auto min-h-[350px] sm:min-h-[420px] ">
                     <Image
-                        className="rounded-4xl"
+                        className="rounded-4xl object-cover"
                         src='/bird-flying.jpg'
                         alt=""
-                        objectFit="cover"
                         fill
                     />
                 </div>

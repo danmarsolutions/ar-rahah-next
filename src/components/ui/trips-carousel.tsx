@@ -72,9 +72,8 @@ function TripCard({ selected }: { selected: boolean }) {
             <div className={cn("relative w-full", selected ? 'h-[500px] md:h-[60vh] ' : 'h-[400px] md:h-[50vh]')}>
                 <Image
                     src='/tower-with-cloud.jpg'
-                    className="rounded-2xl select-none"
+                    className="rounded-2xl object-cover select-none"
                     alt=""
-                    objectFit="cover"
                     fill
                 />
             </div>

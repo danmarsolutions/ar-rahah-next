@@ -74,10 +74,8 @@ function Card() {
             <div className="relative w-full transition-all linear duration-300 h-full">
                 <Image
                     src='/tower-with-cloud.jpg'
-                    className="rounded-2xl -z-10"
+                    className="rounded-2xl -z-10 object-cover object-bottom"
                     alt=""
-                    objectFit="cover"
-                    objectPosition="bottom"
                     fill
                 />
                 <div className="w-full h-full flex flex-col justify-between select-none p-6">

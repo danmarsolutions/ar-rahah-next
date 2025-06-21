@@ -77,9 +77,8 @@ function Card() {
                 <div className="basis-[80%] xl:basis-[60%] aspect-[370/350] lg:aspect-[450/350] order-2 lg:order-1 relative">
                     <Image
                         src='/spirtual-journey.jpg'
-                        className="rounded-2xl -z-10"
+                        className="rounded-2xl -z-10 object-cover"
                         alt=""
-                        objectFit="cover"
                         fill
                     />
                 </div>

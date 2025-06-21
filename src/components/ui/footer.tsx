@@ -64,10 +64,9 @@ export default function Footer() {
                     {Array.from({ length: 9 }).map((_, index) => (
                         <div key={index} className="relative">
                             <Image
-                                className="rounded-lg"
+                                className="rounded-lg object-cover"
                                 src={`/footer/f${index + 1}.png`}
                                 alt=""
-                                objectFit="cover"
                                 fill
                             />
                         </div>

@@ -40,11 +40,9 @@ export default function RootLayout({
         {/* Uncover unique destinations */}
         <section className="relative w-full h-[700px] flex flex-col items-center justify-center text-white p-3.5 md:p-4">
           <Image
-            className="p-4 rounded-4xl md:rounded-[48px] -z-10"
+            className="p-4 rounded-4xl md:rounded-[48px] -z-10 object-cover object-center"
             src='/uncover-unique.jpg'
             alt=""
-            objectFit="cover"
-            objectPosition="center"
             fill
           />
           <div className="flex flex-col items-center justify-center font-albert-sans gap-8 max-w-[1074px] mx-4 md:mx-10">

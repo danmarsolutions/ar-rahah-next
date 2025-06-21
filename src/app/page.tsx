@@ -15,9 +15,8 @@ export default function Home() {
         <Image
           src="/hero.jpg"
           fill={true}
-          objectFit='cover'
           alt=""
-          className='-z-10 rounded-xl'
+          className='-z-10 rounded-xl object-cover'
         />
         <Header isHome />
         <div className='flex flex-col gap-8 text-white'>
@@ -66,27 +65,24 @@ export default function Home() {
         <div className='basis-1/2 w-full h-fit grid grid-cols-2 sm:grid-cols-2 2xl:grid-cols-[minmax(256px,2fr)_1fr] grid-rows-2 gap-2 md:gap-4'>
           <div className='relative h-full w-full row-span-2'>
             <Image
-              className='rounded-lg md:rounded-2xl'
+              className='rounded-lg md:rounded-2xl object-cover'
               src='/mosque.jpg'
-              objectFit='cover'
               alt=''
               fill
             />
           </div>
           <div className='relative h-full aspect-square'>
             <Image
-              className='rounded-lg md:rounded-2xl'
+              className='rounded-lg md:rounded-2xl object-cover'
               src='/bird-flying.jpg'
-              objectFit='cover'
               alt=''
               fill
             />
           </div>
           <div className='relative h-full aspect-square'>
             <Image
-              className='rounded-lg md:rounded-2xl'
+              className='rounded-lg md:rounded-2xl object-cover'
               src='/hot-balloons.jpg'
-              objectFit='cover'
               alt=''
               fill
             />
@@ -112,9 +108,8 @@ export default function Home() {
           <Image
             src='/hot-balloons.jpg'
             alt=""
-            objectFit='cover'
             fill
-            className='rounded-3xl lg:rounded-[60px] -z-10'
+            className='rounded-3xl lg:rounded-[60px] -z-10 object-cover'
           />
           <CirclePlay className='size-12 sm:size-32' color='white' strokeWidth='1px' />
           <div className='text-white font-inter-tight font-semibold text-2xl sm:text-4xl'>Explore Turkey with us!</div>

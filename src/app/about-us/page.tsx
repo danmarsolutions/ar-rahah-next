@@ -10,10 +10,9 @@ export default function AboutUs() {
                 <h1 className="w-full row-start-2 xl:row-start-1 col-span-full font-inter-tight font-semibold text-center md:text-left text-4xl md:text-7xl xl:text-8xl 2xl:text-9xl">Where Purpose Meets Exploration</h1>
                 <div className="relative w-full h-[300px] sm:h-[400px] md:h-[420px] xl:h-[580px] 2xl:h-[550px]  self-end rounded-xl row-start-1 xl:row-start-1 col-start-1 xl:col-start-2 xl:col-end-3 col-span-full xl:col-span-1 xl:row-span-full">
                     <Image
-                        className="rounded-3xl md:rounded-[60px]"
+                        className="rounded-3xl md:rounded-[60px] object-cover"
                         src='/about-us/blue-cave.jpg'
                         alt=""
-                        objectFit="cover"
                         fill
                     />
                 </div>
@@ -26,9 +25,8 @@ export default function AboutUs() {
             <section className="w-full grid grid-cols-1 lg:grid-cols-[1.25fr_1fr] 2xl:grid-cols-[2fr_1fr] grid-rows-[auto_auto] gap-8 lg:gap-10 2xl:gap-20 p-4 py-14 sm:p-12 xl:p-24 2xl:p-30">
                 <div className="relative w-full aspect-square lg:aspect-auto lg:h-full row-start-3 lg:row-start-1 row-span-full">
                     <Image
-                        className="rounded-3xl sm:rounded-[60px]"
+                        className="rounded-3xl sm:rounded-[60px] object-cover"
                         src='/about-us/aerial-drone.jpg'
-                        objectFit="cover"
                         alt=""
                         fill
                     />
@@ -73,9 +71,8 @@ export default function AboutUs() {
                     </div>
                     <div className="relative w-full h-full aspect-square lg:aspect-auto">
                         <Image
-                            className="rounded-3xl sm:rounded-[60px]"
+                            className="rounded-3xl sm:rounded-[60px] object-cover"
                             src='/about-us/river-bank.jpg'
-                            objectFit="cover"
                             alt=""
                             fill
                         />
@@ -91,11 +88,9 @@ export default function AboutUs() {
                 </div>
                 <div className="w-full h-[300px] sm:h-[480px] lg:h-[512px] 2xl:h-[720px] relative">
                     <Image
-                        className="rounded-3xl sm:rounded-[60px]"
+                        className="rounded-3xl sm:rounded-[60px] object-cover object-bottom"
                         src='/about-us/boatman.jpg'
                         alt=""
-                        objectFit="cover"
-                        objectPosition="bottom"
                         fill
                     />
                 </div>
