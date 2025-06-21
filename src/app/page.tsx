@@ -27,12 +27,10 @@ export default function Home() {
             Embark on our exclusive 10-day halal-certified journey through Turkey — a land where faith, history, and breathtaking landscapes converge. From Istanbul's majestic mosques to the ancient wonders of Cappadocia, Ar Rahah curates every moment with your values in mind. Join travelers from around the world on an unforgettable adventure steeped in Islamic heritage and cultural discovery.
           </div>
         </div>
-        <div className='w-fit min-w-max self-center sm:self-end flex flex-row items-center justify-center font-inter-tight font-semibold sm:text-xl bg-white rounded-full px-6 py-3 sm:py-4 xl:px-12 xl:py-6'>
+        <button className='w-fit min-w-max self-center sm:self-end flex flex-row items-center justify-center gap-4 font-inter-tight font-semibold sm:text-xl bg-white rounded-full px-6 py-3 sm:py-4 xl:px-12 xl:py-6 cursor-pointer'>
           10 Days Turkey Exploration Trip
-          <div className='flex flex-row'>
-            <ChevronRight />
-          </div>
-        </div>
+          <img className='w-[1.5em] h-fit' src='/black-triple-chevron.svg' />
+        </button>
       </section>
       {/* Ar Raha - 10 Days Turkey */}
       <section className='w-full flex flex-col lg:flex-row justify-between p-4 py-14 sm:p-12 xl:p-24 gap-10 xl:gap-20 2xl:p-32'>
@@ -59,10 +57,10 @@ export default function Home() {
               <div className='whitespace-nowrap'>Per Person</div>
             </div>
           </div>
-          <div className='hidden lg:flex w-fit flex-row items-center justify-between gap-4 px-6 py-4 2xl:py-6 font-inter-tight text-lg text-white bg-black rounded-full'>
+          <button className='hidden lg:flex w-fit flex-row items-center justify-between gap-4 px-6 py-4 2xl:py-6 font-inter-tight text-lg text-white bg-black rounded-full'>
             See more details
             <ChevronRight />
-          </div>
+          </button>
         </div>
         <div className='basis-1/2 w-full h-fit grid grid-cols-2 sm:grid-cols-2 2xl:grid-cols-[minmax(256px,2fr)_1fr] grid-rows-2 gap-2 md:gap-4'>
           <div className='relative h-full w-full row-span-2'>
@@ -93,10 +91,10 @@ export default function Home() {
             />
           </div>
         </div>
-        <div className='flex lg:hidden w-full flex-row justify-center items-center gap-4 px-4 py-4 font-inter-tight text-lg text-white bg-black rounded-full'>
+        <button className='flex lg:hidden w-full flex-row justify-center items-center gap-4 px-4 py-4 font-inter-tight text-lg text-white bg-black rounded-full'>
           See more details
           <ChevronRight />
-        </div>
+        </button>
       </section>
       {/* Spirtual Adventure */}
       <section className='bg-[#F7F7F7] flex flex-col w-full items-center gap-20 p-4 sm:p-12 xl:p-24 2xl:p-32'>
@@ -130,22 +128,25 @@ export default function Home() {
           </div>
           <div className='flex flex-col gap-7 max-w-[822px] items-center lg:items-start place-self-center lg:place-self-end'>
             <p className='text-center lg:text-left'>Get the best value for your halal-friendly travel — enjoy exclusive discounts, seasonal offers, and curated getaways designed with Muslim travelers in mind.</p>
-            <div className='w-full sm:w-fit bg-black rounded-full py-3 lg:py-4 xl:py-6 px-8 text-white text-center font-inter-tight sm:text-lg font-semibold'>Learn more</div>
+            <button className='w-full flex flex-row items-center justify-center gap-4 sm:w-fit bg-black rounded-full py-3 lg:py-4 xl:py-6 px-8 text-white text-center font-inter-tight sm:text-lg font-semibold cursor-pointer'>
+              Learn more
+              <img className='w-[1.75em] h-fit' src='/triple-chevron.svg' />
+            </button>
           </div>
         </div>
         <DestinationCarousel />
       </section>
       {/* Signature Experiences */}
-      <section className='w-full flex flex-col lg:gap-32 bg-[#F7F7F7] p-4 py-14 sm:p-12 xl:p-24 2xl:p-32'>
-        <div className='flex flex-col lg:flex-row justify-between gap-14 sm:gap-6 lg:gap-16 xl:gap-32'>
-          <div className='flex flex-col items-center lg:items-start gap-14 lg:gap-8'>
+      <section className='w-full flex flex-col gap-10 xl:gap-20 bg-[#F7F7F7] p-4 py-14 sm:p-12 xl:p-24 2xl:p-32'>
+        <div className='flex flex-col lg:flex-row justify-between '>
+          <div className='flex flex-col items-center lg:items-start gap-8'>
             <div className='bg-[#EFEFEF] w-fit font-inter-tight py-3 px-5 rounded-full'>Signature Experiences</div>
             <h2 className='font-inter-tight font-semibold text-[32px] text-center lg:text-left lg:text-5xl xl:text-6xl'>What's so special about this?</h2>
           </div>
-          <div className='flex flex-col gap-7 place-self-end'>
-            <div className='w-full hidden lg:block sm:w-fit bg-black rounded-full py-3 lg:py-4 xl:py-6 px-8 text-white text-center font-inter-tight sm:text-lg font-semibold'>Learn more</div>
-            {/* <div className='w-fit bg-black rounded-full py-6 px-8 text-white font-inter-tight text-lg font-semibold'>Learn more</div> */}
-          </div>
+          <button className='w-fit h-fit hidden place-self-end lg:flex flex-row items-center gap-4 sm:w-fit bg-black rounded-full py-3 lg:py-4 xl:py-6 px-8 text-white text-center font-inter-tight sm:text-lg font-semibold cursor-pointer'>
+            Learn more
+            <img className='w-[1.5em] h-fit' src='/triple-chevron.svg' />
+          </button>
         </div>
         <ExperienceCarousel />
       </section>
