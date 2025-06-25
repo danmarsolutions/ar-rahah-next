@@ -1,7 +1,6 @@
 import Header from "@/components/ui/header";
-import PackageSelect from "@/components/ui/package-select";
 import TourPlanAccordion from "@/components/ui/tour-plan-accordion";
-import { CalendarDays, CircleCheck, CircleX, Heart, MapPin } from "lucide-react";
+import { CalendarDays, CircleCheck, CircleX, MapPin } from "lucide-react";
 import Image from 'next/image'
 
 
@@ -14,14 +13,14 @@ export default function Package() {
             <section className="w-full flex flex-col gap-8 p-4 sm:p-8 md:p-10 lg:p-14">
                 <h1 className="max-w-[1280px] leading-[1.25] font-inter-tight font-medium text-4xl md:text-5xl">Ar Rahah - 10 Days Turkey Exploration: Culture, History, and Spirituality</h1>
                 <div className="w-full flex flex-col lg:flex-row gap-8 lg:gap-0 justify-between items-center">
-                    <div className='w-full flex flex-col lg:flex-row gap-6 font-albert-sans text-lg'>
+                    <div className='w-full flex flex-col lg:flex-row gap-6 font-albert-sans text-base'>
                         <div className='flex flex-row gap-2'><MapPin /> Turkey</div>
                         <div className='flex flex-row gap-2'><CalendarDays /> Oct 15, 2025 - Oct 24, 2025</div>
                     </div>
-                    <div className="w-full lg:w-fit flex flex-row gap-2 text-lg">
+                    {/* <div className="w-full lg:w-fit flex flex-row gap-2 text-lg">
                         <button className="w-full sm:w-fit flex flex-row items-center justify-center gap-2 rounded-xl py-3 px-5 border-2"><Heart /> Save</button>
                         <PackageSelect />
-                    </div>
+                    </div> */}
                     <div className='self-start grid grid-cols-[1fr_2fr_1fr] grid-rows-1 lg:hidden w-full flex-row items-center justify-between gap-4 max-w-lg'>
                         <div className='flex flex-col gap-2 font-albert-sans text-lg'>
                             <div className='whitespace-nowrap'>Starting from</div>
@@ -96,29 +95,29 @@ export default function Package() {
                 </div>
             </section>
             {/* Inclusion & Exlusion Table */}
-            <section className="w-full flex flex-col gap-15 lg:gap-20 p-4 py-14 sm:p-12 xl:p-24 2xl:p-32">
+            <section className="w-full flex flex-col items-center gap-15 p-4 py-14 sm:p-12 xl:p-24 2xl:p-32">
                 <div className='flex flex-col items-center gap-8'>
                     <div className='bg-[#EFEFEF] text-[14px] sm:text-base w-fit font-inter-tight py-3 px-5 rounded-full'>Inclusion & Exclusion</div>
-                    <h2 className='font-inter-tight font-semibold text-center text-[32px] lg:text-5xl xl:text-6xl'>What&apos;s Covered in your Experience?</h2>
+                    <h2 className='font-inter-tight font-semibold text-center text-[32px] lg:text-5xl'>What&apos;s Covered in your Experience?</h2>
                 </div>
-                <table className="w-full overflow-hidden table-fixed border-separate">
-                    <thead className="h-[80px] sm:h-[100px] xl:h-[150px] text-white bg-black">
-                        <tr className="w-full h-full font-inter-tight text-lg sm:text-2xl lg:text-4xl 2xl:text-5xl font-semibold">
-                            <th className="text-center rounded-tl-2xl md:rounded-tl-3xl lg:rounded-tl-4xl" scope="col">
-                                <div className="flex flex-row items-center justify-center gap-3 lg:gap-6 h-full">
+                <table className="min-w-max overflow-hidden table-fixed border-separate">
+                    <thead className="h-fit text-white bg-black">
+                        <tr className="w-full h-full font-inter-tight text-lg sm:text-2xl font-semibold">
+                            <th className="text-center rounded-tl-2xl p-4 py-6" scope="col">
+                                <div className="flex flex-row items-center justify-center gap-3 lg:gap-4 h-full">
                                     <CircleCheck size="1.25em" />
                                     <span>Included</span>
                                 </div>
                             </th>
-                            <th className="text-center rounded-tr-2xl md:rounded-tr-3xl lg:rounded-tr-4xl" scope="col">
-                                <div className="flex flex-row items-center justify-center gap-3 lg:gap-6 h-full">
+                            <th className="text-center rounded-tr-2xl p-4 py-6" scope="col">
+                                <div className="flex flex-row items-center justify-center gap-3 lg:gap-4 h-full">
                                     <CircleX size="1.25em" />
                                     <span>Not Included</span>
                                 </div>
                             </th>
                         </tr>
                     </thead>
-                    <tbody className="font-albert-sans font-medium text-center sm:text-xl lg:text-2xl [&>*]:h-[80px] sm:[&>*]:h-[100px] xl:[&>*]:h-[150px] [&>tr>*]:p-4 [&>tr>*:nth-child(odd)]:border-l [&>tr>*:nth-child(even)]:border-r [&>tr:last-child>*]:border-b [&>tr>*]:border-t  [&>tr>*:nth-child(even)]:text-red-500">
+                    <tbody className="font-albert-sans font-medium text-center sm:text-lg [&>*]:h-fit [&>tr>*]:px-4 [&>tr>*]:py-6 [&>tr>*:nth-child(odd)]:border-l [&>tr>*:nth-child(even)]:border-r [&>tr:last-child>*]:border-b [&>tr>*]:border-t  [&>tr>*:nth-child(even)]:text-red-500">
                         <tr>
                             <td>9 Nights accommodations</td>
                             <td>-</td>
@@ -148,8 +147,8 @@ export default function Package() {
                             <td>-</td>
                         </tr>
                         <tr>
-                            <td className="rounded-bl-2xl md:rounded-bl-3xl lg:rounded-bl-4xl">Taxes</td>
-                            <td className="rounded-br-2xl md:rounded-br-3xl lg:rounded-br-4xl">-</td>
+                            <td className="rounded-bl-2xl">Taxes</td>
+                            <td className="rounded-br-2xl">-</td>
                         </tr>
                     </tbody>
                 </table>
@@ -159,8 +158,8 @@ export default function Package() {
                 <div className='flex flex-col gap-6 lg:gap-8'>
                     <div className='bg-[#EFEFEF] text-[14px] sm:text-base w-fit font-inter-tight py-3 px-5 rounded-full'>Tour Plan</div>
                     <div className="font-inter-tight flex flex-wrap gap-2 items-end">
-                        <h2 className=' font-semibold text-left text-[32px] lg:text-5xl xl:text-6xl'>10 Day Itinerary </h2>
-                        <span className="font-normal text-xl lg:text-2xl">(Please note, this Itinerary is subject to change based on Travel Logistics)</span>
+                        <h2 className=' font-semibold text-left text-[32px] lg:text-5xl'>10 Day Itinerary </h2>
+                        <span className="font-normal text-xl">(Please note, this Itinerary is subject to change based on Travel Logistics)</span>
                     </div>
                 </div>
                 <TourPlanAccordion />

@@ -299,7 +299,7 @@ export default function ContactForm() {
                         }}
                     />
                 </div>
-                <Button className="h-fit w-full md:w-fit font-inter-tight font-semibold md:text-2xl rounded-full py-3 lg:py-5 2xl:py-6 md:!px-12 cursor-pointer" type="submit">
+                <Button className="h-fit w-full md:w-fit font-inter-tight font-semibold text-base rounded-full py-3 lg:py-4 md:!px-6 cursor-pointer transition-transform duration-300 hover:scale-105" type="submit">
                     <div className='flex flex-row items-center justify-center gap-2'>
                         <span>Submit</span>
                         <img className='w-[1.5em] h-fit' src='/icons/triple-chevron.svg' />

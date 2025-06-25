@@ -51,7 +51,7 @@ export default function Testimonials() {
     function Card() {
         return (
             <div className="w-full flex flex-col items-center justify-center">
-                <p className="w-full font-albert-sans text-3xl lg:text-4xl 2xl:text-6xl text-center">
+                <p className="w-full font-albert-sans text-2xl lg:text-4xl text-center">
                     “I&apos;ve been on many tours, but this one felt different. From visiting Sahabah sites to attending historical lectures, Ar Rahah made everything smooth, halal, and inspiring. JazakAllah Khair!”
                 </p>
             </div>

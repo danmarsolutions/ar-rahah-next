@@ -85,7 +85,7 @@ function TripCard({ selected }: { selected: boolean }) {
                 <p className="font-albert-sans md:text-lg">Walk in the footsteps of empires.</p>
                 <div className='md:text-lg flex flex-row gap-2'><MapPin /> Istanbul, Bursa, Konya, Cappadocia</div>
             </div>
-            <div className={cn("flex flex-col gap-2 md:flex-row justify-between text-lg text-center font-albert-sans", selected ? 'visible' : 'invisible')}>
+            <div className={cn("flex flex-col gap-2 md:flex-row justify-between text-base text-center font-albert-sans", selected ? 'visible' : 'invisible')}>
                 <div className="px-4 py-4 3xl:px-8 3xl:py-4 border rounded-full bg-white">From $2,499</div>
                 <div className="px-4 py-4 3xl:px-8 3xl:py-4 text-white rounded-full bg-black">Book Trip to Turkey</div>
             </div>

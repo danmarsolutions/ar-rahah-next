@@ -11,6 +11,7 @@ import Image from "next/image"
 
 import { useEffect, useState } from "react";
 import ProgressBar from "./carousel-progress-bar";
+import ButtonLink from "./button-link";
 
 export default function ExperienceCarousel() {
 
@@ -61,10 +62,10 @@ export default function ExperienceCarousel() {
                     </div>
                 </div>
             </div>
-            <button className='w-full self-end flex flex-row gap-4 items-center justify-center lg:hidden sm:w-fit bg-black rounded-full py-3 lg:py-4 xl:py-6 px-8 text-white text-center font-inter-tight sm:text-lg font-semibold'>
+            <ButtonLink href='/about-us' className="flex lg:hidden w-full">
                 Learn more
                 <img className='w-[1.75em] h-fit self-center' src='/icons/triple-chevron.svg' />
-            </button>
+            </ButtonLink>
         </Carousel>
     )
 }
@@ -85,7 +86,7 @@ function Card() {
             </div>
             <div className="flex flex-col gap-3">
                 <div className="font-inter-tight font-semibold text-2xl sm:text-3xl">Spiritually Enriching Journeys:</div>
-                <p className="font-albert-sans sm:text-2xl">Not just vacations — our tours reconnect you with Islamic history and heritage, guided by scholars and experts.</p>
+                <p className="font-albert-sans sm:text-xl">Not just vacations — our tours reconnect you with Islamic history and heritage, guided by scholars and experts.</p>
             </div>
         </div>
     )

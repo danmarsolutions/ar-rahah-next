@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import { Inter_Tight, Albert_Sans, Galada } from "next/font/google";
 import "./globals.css";
-import Link from "next/link";
 import Image from 'next/image'
 import Footer from "@/components/ui/footer";
+import ButtonLink from "@/components/ui/button-link";
 
 const interTight = Inter_Tight({
   variable: "--font-inter-tight",
@@ -34,24 +34,26 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${interTight.variable} ${albertSans.variable} ${galada.variable} flex flex-col mx-auto w-full max-w-[1920px] antialiased box-border`}
+        className={`${interTight.variable} ${albertSans.variable} ${galada.variable} flex flex-col mx-auto w-full max-w-[1536px] antialiased box-border`}
       >
         {children}
         {/* Uncover unique destinations */}
-        <section className="relative w-full h-[700px] flex flex-col items-center justify-center text-white p-3.5 md:p-4">
+        <section className="relative w-full sm:max-h-[512px] aspect-video flex flex-col items-center justify-center text-white p-3.5 md:p-4">
           <Image
             className="p-4 rounded-4xl md:rounded-[48px] -z-10 object-cover object-center"
             src='/uncover-unique.jpg'
             alt=""
             fill
           />
-          <div className="flex flex-col items-center justify-center font-albert-sans gap-8 max-w-[1074px] mx-4 md:mx-10">
-            <h2 className="text-4xl md:text-6xl xl:text-7xl font-semibold text-center leading-tight">Uncover unique destinations tailored just for you by Ar Rahah</h2>
-            <p className="font-medium text-lg text-center md:mx-18 lg:mx-32">Lorem ipsum dolor sit amet consectetur. Ac turpis et amet facilisis purus egestas enim ante. Porttitor nunc semper nunc libero vitae eget. Odio ultricies ornare tristique in erat auctor tellus</p>
-            <Link href='/' className='w-full md:w-fit h-fit row-start-2 md:col-start-1 lg:col-start-2 md:row-start-2 md:row-end-3 lg:row-start-1 lg:row-end-2 justify-self-end flex flex-row items-center justify-center gap-2 px-8 py-3 md:py-6 bg-white text-black text-lg font-semibold rounded-full'>
-              <span>Book Trip to Turkey</span>
-              <img className='w-[1.5em] h-fit' src='/icons/black-triple-chevron.svg' />
-            </Link>
+          <div className="flex flex-col items-center justify-center font-albert-sans gap-12 max-w-[1074px] m-8 md:mx-10">
+            <div className="flex flex-col gap-4">
+              <h2 className="text-4xl md:text-5xl font-semibold text-center leading-none">Uncover unique destinations tailored just for you by <span className="whitespace-nowrap">Ar Rahah</span></h2>
+              <p className="font-medium text-lg text-center md:mx-18 lg:mx-32">Lorem ipsum dolor sit amet consectetur. Ac turpis et amet facilisis purus egestas enim ante. Porttitor nunc semper nunc libero vitae eget. Odio ultricies ornare tristique in erat auctor tellus</p>
+            </div>
+            <ButtonLink href='/package' className="bg-white text-black">
+              Book Trip to Turkey
+              <img className='w-[1.75em] h-fit' src='/icons/black-triple-chevron.svg' />
+            </ButtonLink>
           </div>
         </section>
         {/* footer */}
