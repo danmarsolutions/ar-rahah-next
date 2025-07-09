@@ -4,14 +4,14 @@ import ExperienceCarousel from '@/components/ui/experience-carousel';
 import Header from '@/components/ui/header';
 import Testimonials from '@/components/ui/testimonials';
 import TripsCarousel from '@/components/ui/trips-carousel';
-import { CalendarDays, ChevronRight, CirclePlay, MapPin } from 'lucide-react';
+import { CalendarDays, ChevronRight, CirclePlay, MapPin, ChevronsRight } from 'lucide-react';
 import Image from 'next/image'
 
 export default function Home() {
   return (
     <main className='w-full flex flex-col'>
       {/* Hero */}
-      <section className='relative h-screen flex flex-col items-center lg:flex-row lg:items-end justify-center sm:justify-end gap-12 p-4 sm:m-0 sm:p-12'>
+      <section className='relative h-screen flex flex-col items-end lg:flex-row lg:items-end justify-center sm:justify-end gap-12 p-4 sm:m-0 sm:p-12'>
         <Image
           src="/hero.jpg"
           fill
@@ -20,17 +20,23 @@ export default function Home() {
         />
         <Header isHome />
         <div className='flex flex-col gap-6 sm:gap-4 text-white'>
-          <h1 className='font-inter-tight text-center sm:text-left text-3xl sm:text-4xl lg:text-5xl 2xl:text-7xl font-semibold'>
-            Discover Turkey with <span className='whitespace-nowrap'>Ar Rahah</span> - Your Trusted Muslim-Friendly Travel Partner
+          <h1 className='font-inter-tight text-left text-3xl sm:text-4xl lg:text-5xl 2xl:text-7xl font-semibold'>
+            <span className='whitespace-nowrap'>Ar Rahah</span>—Your Trusted Muslim-Friendly Travel Partner
           </h1>
-          <div className='font-albert-sans text-center sm:text-left md:text-lg xl:text-lg leading-tight max-w-4xl'>
-            Embark on our exclusive 10-day halal-certified journey through Turkey — a land where faith, history, and breathtaking landscapes converge. From Istanbul&apos;s majestic mosques to the ancient wonders of Cappadocia, Ar Rahah curates every moment with your values in mind. Join travelers from around the world on an unforgettable adventure steeped in Islamic heritage and cultural discovery.
+          <div className='font-albert-sans text-left md:text-lg xl:text-lg leading-tight max-w-4xl'>
+            Specializing in creating enriching travel experiences tailored for Muslim travelers. From halal-certified dining to prayer accommodations and spiritually meaningful itineraries, we ensure your journey is seamless, fulfilling, and aligned with your values—wherever you go.
           </div>
         </div>
-        <ButtonLink href='/package' className='bg-white text-black md:text-lg font-semibold min-w-max sm:self-end'>
-          <span>10 Days Turkey Exploration Trip</span>
-          <img className='w-[1.5em] h-fit' src='/icons/black-triple-chevron.svg' />
-        </ButtonLink>
+        <div className="flex flex-col gap-4 items-end">
+          <ButtonLink href='/about-us' className='bg-black/50 border border-white text-white md:text-lg font-semibold min-w-max sm:self-end'>
+            <span>About Us</span>
+            <ChevronsRight />
+          </ButtonLink>
+          <ButtonLink href='/package' className='bg-white text-black md:text-lg font-semibold min-w-max sm:self-end'>
+            <span>10 Days Turkey Exploration Trip</span>
+            <ChevronsRight />
+          </ButtonLink>
+        </div>
       </section>
       {/* Ar Raha - 10 Days Turkey */}
       <section className='w-full flex flex-col lg:flex-row justify-between p-4 py-14 sm:p-12 xl:p-24 gap-10 xl:gap-20 2xl:p-32'>
