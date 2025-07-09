@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Inter_Tight, Albert_Sans, Galada } from "next/font/google";
 import "./globals.css";
-import Image from 'next/image'
+import Image from "next/image";
 import Footer from "@/components/ui/footer";
 import ButtonLink from "@/components/ui/button-link";
 
@@ -41,18 +41,32 @@ export default function RootLayout({
         <section className="relative w-full sm:max-h-[512px] aspect-video flex flex-col items-center justify-center text-white p-3.5 md:p-4">
           <Image
             className="p-4 rounded-4xl md:rounded-[48px] -z-10 object-cover object-center"
-            src='/uncover-unique.jpg'
+            src="/uncover-unique.jpg"
             alt=""
             fill
           />
           <div className="flex flex-col items-center justify-center font-albert-sans gap-12 max-w-[1074px] m-8 md:mx-10">
             <div className="flex flex-col gap-4">
-              <h2 className="text-4xl md:text-5xl font-semibold text-center leading-none">Uncover unique destinations tailored just for you by <span className="whitespace-nowrap">Ar Rahah</span></h2>
-              <p className="font-medium text-lg text-center md:mx-18 lg:mx-32">Lorem ipsum dolor sit amet consectetur. Ac turpis et amet facilisis purus egestas enim ante. Porttitor nunc semper nunc libero vitae eget. Odio ultricies ornare tristique in erat auctor tellus</p>
+              <h2 className="text-4xl md:text-5xl font-semibold text-center leading-none">
+                Uncover unique destinations tailored just for you by{" "}
+                <span className="whitespace-nowrap">Ar Rahah</span>
+              </h2>
+              <p className="font-medium text-lg text-center md:mx-18 lg:mx-32">
+                Lorem ipsum dolor sit amet consectetur. Ac turpis et
+                amet facilisis purus egestas enim ante. Porttitor nunc
+                semper nunc libero vitae eget. Odio ultricies ornare
+                tristique in erat auctor tellus
+              </p>
             </div>
-            <ButtonLink href='/package' className="bg-white text-black">
+            <ButtonLink
+              href="/package"
+              className="bg-white text-black"
+            >
               Book Trip to Turkey
-              <img className='w-[1.75em] h-fit' src='/icons/black-triple-chevron.svg' />
+              <img
+                className="w-[1.75em] h-fit"
+                src="/icons/black-triple-chevron.svg"
+              />
             </ButtonLink>
           </div>
         </section>
