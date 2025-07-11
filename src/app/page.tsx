@@ -3,7 +3,9 @@ import DestinationCarousel from "@/components/ui/destination-carousel";
 import ExperienceCarousel from "@/components/ui/experience-carousel";
 import Header from "@/components/ui/header";
 import Testimonials from "@/components/ui/testimonials";
-import TripsCarousel, { TripCard } from "@/components/ui/trips-carousel";
+import TripsCarousel, {
+  TripCard,
+} from "@/components/ui/trips-carousel";
 import {
   CalendarDays,
   ChevronRight,
@@ -230,6 +232,26 @@ export default function Home() {
           </h2>
         </div>
         <Testimonials />
+      </section>
+      <section className="relative w-full sm:max-h-[512px] aspect-video flex flex-col items-center justify-center text-white p-3.5 md:p-4">
+        <Image
+          className="p-4 rounded-4xl md:rounded-[48px] -z-10 object-cover object-center"
+          src="/uncover-unique.jpg"
+          alt=""
+          fill
+        />
+        <div className="flex flex-col items-center justify-center font-albert-sans gap-12 max-w-[1074px] m-8 md:mx-10">
+          <div className="flex flex-col gap-4">
+            <h2 className="text-4xl md:text-5xl font-semibold text-center leading-none">
+              Uncover unique destinations tailored just for you by{" "}
+              <span className="whitespace-nowrap">Ar Rahah</span>
+            </h2>
+          </div>
+          <ButtonLink href="/package" className="bg-white text-black">
+            Book Trip to Turkey
+            <ChevronsRight />
+          </ButtonLink>
+        </div>
       </section>
     </main>
   );
