@@ -5,12 +5,48 @@ import {
   CarouselContent,
   CarouselItem,
 } from "@/components/ui/carousel";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import {
+  ChevronLeft,
+  ChevronRight,
+  ChevronsRight,
+} from "lucide-react";
 import Image from "next/image";
 
 import { useEffect, useState } from "react";
 import ProgressBar from "./carousel-progress-bar";
 import ButtonLink from "./button-link";
+
+type Experience = {
+  image: string;
+  title: string;
+  description: string;
+};
+const experiences: Experience[] = [
+  {
+    image: "/prayer_mountain.png",
+    title: "Halal-Centric Travel",
+    description:
+      "Travel with ease knowing your meals, prayers, and values are always prioritized.",
+  },
+  {
+    image: "/dubai_mosque.jpg",
+    title: "Faith-Based Experiences",
+    description:
+      "Step into Islamic history with stories of prophets, scholars, and civilizations.",
+  },
+  {
+    image: "/muslim_market.jpg",
+    title: "Authentic & Local",
+    description:
+      "Explore each destination through a trusted, local, and Islamic lens.",
+  },
+  {
+    image: "/topi_walking.jpg",
+    title: "A Community of Travelers",
+    description:
+      "Join a like-minded group seeking reflection, connection, and meaningful memories.",
+  },
+];
 
 export default function ExperienceCarousel() {
   const [api, setApi] = useState<CarouselApi>();
@@ -22,12 +58,20 @@ export default function ExperienceCarousel() {
       return;
     }
 
-    setCount(api.scrollSnapList().length);
+    function updateCount() {
+      setCount(api?.scrollSnapList().length ?? 0);
+    }
+    updateCount();
+    addEventListener("resize", updateCount);
     setCurrent(api.selectedScrollSnap());
 
     api.on("select", () => {
       setCurrent(api.selectedScrollSnap());
     });
+
+    return () => {
+      removeEventListener("resize", updateCount);
+    };
   }, [api]);
 
   return (
@@ -41,9 +85,9 @@ export default function ExperienceCarousel() {
       className="w-full flex flex-col gap-10 lg:gap-20"
     >
       <CarouselContent>
-        {Array.from({ length: 3 }).map((_, index) => (
+        {experiences.map((experience, index) => (
           <CarouselItem key={index} className="lg:basis-1/2">
-            <Card />
+            <ExperienceCard experience={experience} num={index + 1} />
           </CarouselItem>
         ))}
       </CarouselContent>
@@ -70,38 +114,40 @@ export default function ExperienceCarousel() {
       </div>
       <ButtonLink href="/about-us" className="flex lg:hidden w-full">
         Learn more
-        <img
-          className="w-[1.75em] h-fit self-center"
-          src="/icons/triple-chevron.svg"
-        />
+        <ChevronsRight />
       </ButtonLink>
     </Carousel>
   );
 }
 
-function Card() {
+function ExperienceCard({
+  experience,
+  num,
+}: {
+  experience: Experience;
+  num: number;
+}) {
   return (
     <div className="flex flex-col gap-6 w-full border rounded-2xl p-4">
       <div className="w-full h-full flex flex-col gap-6 lg:gap-0 lg:flex-row justify-between">
         <div className="basis-[80%] xl:basis-[60%] aspect-[370/350] lg:aspect-[450/350] order-2 lg:order-1 relative">
           <Image
-            src="/spirtual-journey.jpg"
+            src={experience.image}
             className="rounded-2xl -z-10 object-cover"
             alt=""
             fill
           />
         </div>
         <div className="w-fit h-full order-1 lg:order-2 font-albert-sans font-semibold text-5xl text-left lg:text-right">
-          01
+          {num}
         </div>
       </div>
       <div className="flex flex-col gap-3">
         <div className="font-inter-tight font-semibold text-2xl sm:text-3xl">
-          Spiritually Enriching Journeys:
+          {experience.title}
         </div>
         <p className="font-albert-sans sm:text-xl">
-          Not just vacations — our tours reconnect you with Islamic
-          history and heritage, guided by scholars and experts.
+          {experience.description}
         </p>
       </div>
     </div>
