@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import ButtonLink from "./button-link";
 import { ChevronsRight } from "lucide-react";
+import { FaFacebook, FaInstagram } from "react-icons/fa";
 
 export default function Footer() {
   return (
@@ -18,17 +19,21 @@ export default function Footer() {
           </div>
           {/* Socials */}
           <div className="flex flex-row gap-6 text-lg">
-            <a className="flex flex-row gap-2.5 items-center justify-between border-0 lg:border border-white/20 rounded-full px-6 py-4 cursor-pointer">
-              <img className="size-5" src="/icons/instagram.svg" />
+            <a
+              href="https://www.instagram.com/ar.rahah?utm_source=ig_web_button_share_sheet&igsh=MXJ6MGVzbzBhd3Fidw=="
+              target="_blank"
+              className="flex flex-row gap-2.5 items-center justify-between border-0 lg:border border-white/20 rounded-full px-6 py-4 cursor-pointer"
+            >
+              <FaInstagram className="size-5" />
               <span className="hidden lg:block">Instagram</span>
             </a>
-            <a className="flex flex-row gap-2.5 items-center justify-between border-0 lg:border border-white/20 rounded-full px-6 py-4 cursor-pointer">
-              <img className="size-5" src="/icons/facebook.svg" />
+            <a
+              href="https://www.facebook.com/arrahahtours/"
+              target="_blank"
+              className="flex flex-row gap-2.5 items-center justify-between border-0 lg:border border-white/20 rounded-full px-6 py-4 cursor-pointer"
+            >
+              <FaFacebook className="size-5" />
               <span className="hidden lg:block">Facebook</span>
-            </a>
-            <a className="flex flex-row gap-2.5 items-center justify-between border-0 lg:border border-white/20 rounded-full px-6 py-4 cursor-pointer">
-              <img className="size-5" src="/icons/youtube.svg" />
-              <span className="hidden lg:block">Youtube</span>
             </a>
           </div>
         </div>
