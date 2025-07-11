@@ -126,7 +126,7 @@ function TripCard({ selected }: { selected: boolean }) {
         )}
       >
         <div className="px-4 py-4 3xl:px-8 3xl:py-4 border rounded-full bg-white">
-          From $2,499
+          From $2,900 CAD
         </div>
         <div className="px-4 py-4 3xl:px-8 3xl:py-4 text-white rounded-full bg-black">
           Book Trip to Turkey

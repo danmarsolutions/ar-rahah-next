@@ -76,7 +76,7 @@ export default function Home() {
             <div className="w-fit flex flex-col gap-2 font-albert-sans text-base">
               <div className="whitespace-nowrap">Starting from</div>
               <div className="text-2xl sm:text-3xl xl:text-3xl">
-                $9,000
+                $2,900 CAD
               </div>
               <div className="whitespace-nowrap">Per Person</div>
             </div>
@@ -84,7 +84,7 @@ export default function Home() {
             <div className="w-fit flex flex-col gap-2 font-albert-sans text-base">
               <div>To</div>
               <div className="text-2xl sm:text-3xl xl:text-3xl">
-                $19,000
+                $3,900 CAD
               </div>
               <div className="whitespace-nowrap">Per Person</div>
             </div>
