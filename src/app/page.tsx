@@ -3,7 +3,7 @@ import DestinationCarousel from "@/components/ui/destination-carousel";
 import ExperienceCarousel from "@/components/ui/experience-carousel";
 import Header from "@/components/ui/header";
 import Testimonials from "@/components/ui/testimonials";
-import TripsCarousel from "@/components/ui/trips-carousel";
+import TripsCarousel, { TripCard } from "@/components/ui/trips-carousel";
 import {
   CalendarDays,
   ChevronRight,
@@ -143,7 +143,9 @@ export default function Home() {
             experiences.
           </p>
         </div>
-        <TripsCarousel />
+        <TripCard selected={true} />
+        {/* Uncomment the following line to enable the TripsCarousel component for multiple trips */}
+        {/* <TripsCarousel /> */}
       </section>
       {/* Video */}
       <section className="w-full py-14 px-4 sm:px-12 xl:px-24 2xl:px-32">

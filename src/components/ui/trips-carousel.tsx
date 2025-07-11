@@ -73,7 +73,7 @@ export default function TripsCarousel() {
   );
 }
 
-function TripCard({ selected }: { selected: boolean }) {
+export function TripCard({ selected }: { selected: boolean }) {
   return (
     <div
       className={cn(
