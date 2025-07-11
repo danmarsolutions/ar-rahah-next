@@ -3,13 +3,10 @@ import DestinationCarousel from "@/components/ui/destination-carousel";
 import ExperienceCarousel from "@/components/ui/experience-carousel";
 import Header from "@/components/ui/header";
 import Testimonials from "@/components/ui/testimonials";
-import TripsCarousel, {
-  TripCard,
-} from "@/components/ui/trips-carousel";
+import { TripCard } from "@/components/ui/trips-carousel";
 import {
   CalendarDays,
   ChevronRight,
-  CirclePlay,
   MapPin,
   ChevronsRight,
 } from "lucide-react";
@@ -49,7 +46,7 @@ export default function Home() {
             <ChevronsRight />
           </ButtonLink>
           <ButtonLink
-            href="/package"
+            href="/turkey"
             className="bg-white text-black md:text-lg font-semibold min-w-max sm:self-end"
           >
             <span>10 Days Turkey Exploration Trip</span>
@@ -91,7 +88,7 @@ export default function Home() {
               <div className="whitespace-nowrap">Per Person</div>
             </div>
           </div>
-          <ButtonLink href="/package">
+          <ButtonLink href="/turkey">
             See more details
             <ChevronRight />
           </ButtonLink>
@@ -247,7 +244,7 @@ export default function Home() {
               <span className="whitespace-nowrap">Ar Rahah</span>
             </h2>
           </div>
-          <ButtonLink href="/package" className="bg-white text-black">
+          <ButtonLink href="/turkey" className="bg-white text-black">
             Book Trip to Turkey
             <ChevronsRight />
           </ButtonLink>

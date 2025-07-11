@@ -1,9 +1,7 @@
 import type { Metadata } from "next";
 import { Inter_Tight, Albert_Sans, Galada } from "next/font/google";
 import "./globals.css";
-import Image from "next/image";
 import Footer from "@/components/ui/footer";
-import ButtonLink from "@/components/ui/button-link";
 
 const interTight = Inter_Tight({
   variable: "--font-inter-tight",

@@ -3,6 +3,7 @@ import HeaderNav from "./header-nav";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 import ButtonLink from "./button-link";
+import Image from "next/image";
 
 export default function Header({ isHome }: { isHome?: boolean }) {
   return (
@@ -17,19 +18,21 @@ export default function Header({ isHome }: { isHome?: boolean }) {
         href="/"
         className="flex flex-row items-center gap-2 sm:gap-4"
       >
-        <img
-          src="/logo.png"
+        <Image
+          src="/logo-clean.png"
           alt="Ar-Rahah logo"
-          className="aspect-square w-10 sm:w-16 lg:w-18"
+          className="h-auto rounded-full w-10 sm:w-16 lg:w-24 brightness-0 invert"
+          width={450}
+          height={450}
         />
-        <span
-          className={cn(
-            "font-galada h-fit text-2xl sm:text-3xl lg:text-3xl leading-none",
-            isHome && "text-white",
-          )}
-        >
-          AR Rahah
-        </span>
+        {/* <span */}
+        {/*   className={cn( */}
+        {/*     "font-inter-tight h-fit text-lg sm:text-xl lg:text-2xl leading-none", */}
+        {/*     isHome && "text-white", */}
+        {/*   )} */}
+        {/* > */}
+        {/*   Ar Rahah */}
+        {/* </span> */}
       </Link>
       {/* Nav Link */}
       <HeaderNav />
