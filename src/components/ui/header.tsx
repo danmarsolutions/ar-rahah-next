@@ -21,7 +21,11 @@ export default function Header({ isHome }: { isHome?: boolean }) {
         <Image
           src="/logo-clean.png"
           alt="Ar-Rahah logo"
-          className="h-auto rounded-full w-10 sm:w-16 lg:w-24 brightness-0 invert"
+          // className="h-auto rounded-full w-10 sm:w-16 lg:w-24 brightness-0 invert"
+          className={cn(
+            "h-auto rounded-full w-12 lg:w-24 brightness-0",
+            isHome && "invert",
+          )}
           width={450}
           height={450}
         />

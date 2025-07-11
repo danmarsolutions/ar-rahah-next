@@ -155,7 +155,7 @@ export default function Package() {
             What&apos;s Covered in your Experience?
           </h2>
         </div>
-        <table className="min-w-max overflow-hidden table-fixed border-separate">
+        <table className="min-w-max overflow-hidden hidden lg:table table-fixed border-separate">
           <thead className="h-fit text-white bg-black">
             <tr className="w-full h-full font-inter-tight text-lg sm:text-2xl font-semibold">
               <th
@@ -216,6 +216,68 @@ export default function Package() {
             </tr>
           </tbody>
         </table>
+        <div className="lg:hidden divide-y divide-gray-200 w-full">
+          <div className="flex flex-col">
+            {[
+              "9 Nights accommodations",
+              "Breakfast & Dinner",
+              "A/C Transport during the Tour",
+              "Professional Guide in English",
+              "Entrance Fees to the indicated Museums & Sites",
+              "Parking costs",
+              "Presentations & History talks",
+              "Taxes",
+            ].map((included, index) => {
+              return (
+                <div className="py-2" key={index}>
+                  <div className="text-green-600 font-semibold flex items-center gap-2">
+                    <CircleCheck size="1em" />
+                    <span>{included}</span>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+          <div className="flex flex-col">
+            {[
+              "Any meals outside of included meals",
+              "Personal Expenses",
+              "Optional Tours",
+              "Any local transport outside of itinerary i.e. taxis etc.",
+              "Hot air Balloon ride in Cappadocia",
+            ].map((notIncluded, index) => {
+              return (
+                <div className="py-2" key={index}>
+                  <div className="text-red-600 font-semibold flex items-center gap-2">
+                    <CircleX size="1em" />
+                    <span>{notIncluded}</span>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+          {/* {[ */}
+          {/*   [ */}
+          {/*     "9 Nights accommodations", */}
+          {/*     "Any meals outside of included meals", */}
+          {/*   ], */}
+          {/*   ["Breakfast & Dinner", "Personal Expenses"], */}
+          {/*   // ...etc */}
+          {/* ].map(([included, notIncluded], index) => ( */}
+          {/*   <div key={index} className="py-4 px-4"> */}
+          {/*     <div className="text-green-600 font-semibold flex items-center gap-2 mb-1"> */}
+          {/*       <CircleCheck size="1em" /> */}
+          {/*       <span>{included}</span> */}
+          {/*     </div> */}
+          {/*     {notIncluded && ( */}
+          {/*       <div className="text-red-500 font-medium flex items-center gap-2"> */}
+          {/*         <CircleX size="1em" /> */}
+          {/*         <span>{notIncluded}</span> */}
+          {/*       </div> */}
+          {/*     )} */}
+          {/*   </div> */}
+          {/* ))} */}
+        </div>
       </section>
       {/* Tour Plan */}
       <section className="flex flex-col gap-15 lg:gap-20 p-4 py-14 sm:p-12 xl:p-24 2xl:p-32">

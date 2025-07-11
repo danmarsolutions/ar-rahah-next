@@ -75,10 +75,17 @@ export default function HeaderNav() {
 }
 
 function BreadMenu() {
+  const pathname = usePathname();
+  const isHome = pathname === "/";
   return (
     <Sheet>
       <SheetTrigger className="block lg:hidden cursor-pointer">
-        <Menu className="size-6 text-white" />
+        <Menu
+          className={cn(
+            "size-6",
+            isHome ? "text-white" : "text-black",
+          )}
+        />
       </SheetTrigger>
       <SheetContent className="w-screen gap-0">
         <SheetHeader>
