@@ -3,7 +3,7 @@ import DestinationCarousel from "@/components/ui/destination-carousel";
 import ExperienceCarousel from "@/components/ui/experience-carousel";
 import Header from "@/components/ui/header";
 import Testimonials from "@/components/ui/testimonials";
-import TripsCarousel from "@/components/ui/trips-carousel";
+import TripsCarousel, { TripCard } from "@/components/ui/trips-carousel";
 import {
   CalendarDays,
   ChevronRight,
@@ -76,7 +76,7 @@ export default function Home() {
             <div className="w-fit flex flex-col gap-2 font-albert-sans text-base">
               <div className="whitespace-nowrap">Starting from</div>
               <div className="text-2xl sm:text-3xl xl:text-3xl">
-                $9,000
+                $2,900 CAD
               </div>
               <div className="whitespace-nowrap">Per Person</div>
             </div>
@@ -84,7 +84,7 @@ export default function Home() {
             <div className="w-fit flex flex-col gap-2 font-albert-sans text-base">
               <div>To</div>
               <div className="text-2xl sm:text-3xl xl:text-3xl">
-                $19,000
+                $3,900 CAD
               </div>
               <div className="whitespace-nowrap">Per Person</div>
             </div>
@@ -143,27 +143,30 @@ export default function Home() {
             experiences.
           </p>
         </div>
-        <TripsCarousel />
+        <TripCard selected={true} />
+        {/* Uncomment the following line to enable the TripsCarousel component for multiple trips */}
+        {/* <TripsCarousel /> */}
       </section>
       {/* Video */}
-      <section className="w-full py-14 px-4 sm:px-12 xl:px-24 2xl:px-32">
-        <div className="relative w-full aspect-square sm:aspect-video max-h-[90vh] flex flex-col justify-center items-center gap-2 sm:gap-6">
-          <Image
-            src="/hot-balloons.jpg"
-            alt=""
-            fill
-            className="rounded-3xl lg:rounded-[60px] -z-10 object-cover"
-          />
-          <CirclePlay
-            className="size-12 sm:size-32"
-            color="white"
-            strokeWidth="1px"
-          />
-          <div className="text-white font-inter-tight font-semibold text-2xl sm:text-4xl">
-            Explore Turkey with us!
-          </div>
-        </div>
-      </section>
+      {/* Uncomment below when we have a video for this section */}
+      {/* <section className="w-full py-14 px-4 sm:px-12 xl:px-24 2xl:px-32"> */}
+      {/*   <div className="relative w-full aspect-square sm:aspect-video max-h-[90vh] flex flex-col justify-center items-center gap-2 sm:gap-6"> */}
+      {/*     <Image */}
+      {/*       src="/hot-balloons.jpg" */}
+      {/*       alt="" */}
+      {/*       fill */}
+      {/*       className="rounded-3xl lg:rounded-[60px] -z-10 object-cover" */}
+      {/*     /> */}
+      {/*     <CirclePlay */}
+      {/*       className="size-12 sm:size-32" */}
+      {/*       color="white" */}
+      {/*       strokeWidth="1px" */}
+      {/*     /> */}
+      {/*     <div className="text-white font-inter-tight font-semibold text-2xl sm:text-4xl"> */}
+      {/*       Explore Turkey with us! */}
+      {/*     </div> */}
+      {/*   </div> */}
+      {/* </section> */}
       {/* Our Destinations */}
       <section
         id="destinations"

@@ -35,7 +35,7 @@ export default function Package() {
             <div className="flex flex-col gap-2 font-albert-sans text-lg">
               <div className="whitespace-nowrap">Starting from</div>
               <div className="text-2xl sm:text-3xl xl:text-4xl">
-                $9,000
+                $2,900 CAD
               </div>
               <div className="whitespace-nowrap">Per Person</div>
             </div>
@@ -43,7 +43,7 @@ export default function Package() {
             <div className="flex flex-col gap-2 font-albert-sans text-lg">
               <div>To</div>
               <div className="text-2xl sm:text-3xl xl:text-4xl">
-                $19,000
+                $3,900 CAD
               </div>
               <div className="whitespace-nowrap">Per Person</div>
             </div>
@@ -64,7 +64,7 @@ export default function Package() {
               <div className="w-fit flex flex-col gap-2 font-albert-sans text-lg">
                 <div className="whitespace-nowrap">Starting from</div>
                 <div className="text-2xl sm:text-3xl xl:text-4xl">
-                  $9,000
+                  $2,900 CAD
                 </div>
                 <div className="whitespace-nowrap">Per Person</div>
               </div>
@@ -72,7 +72,7 @@ export default function Package() {
               <div className="w-fit flex flex-col gap-2 font-albert-sans text-lg">
                 <div>To</div>
                 <div className="text-2xl sm:text-3xl xl:text-4xl">
-                  $19,000
+                  $3,900 CAD
                 </div>
                 <div className="whitespace-nowrap">Per Person</div>
               </div>
