@@ -33,18 +33,18 @@ export default function ContactUs() {
               <Phone size="60%" strokeWidth="1px" />
             </div>
             <div className="font-semibold">Phone:</div>
-            <div>+1 (800) 123-ARAH (2724)</div>
+            <div>647-233-8739</div>
           </div>
-          <div className="w-full flex flex-col gap-4">
-            <div className="border border-slate-300 rounded-2xl flex flex-row items-center justify-center size-16">
-              <MapPin size="60%" strokeWidth="1px" />
-            </div>
-            <div className="font-semibold">Office:</div>
-            <div>
-              Lorem ipsum dolor sit amet consectetur. Turpis eu
-              accumsan
-            </div>
-          </div>
+          {/* <div className="w-full flex flex-col gap-4"> */}
+          {/*   <div className="border border-slate-300 rounded-2xl flex flex-row items-center justify-center size-16"> */}
+          {/*     <MapPin size="60%" strokeWidth="1px" /> */}
+          {/*   </div> */}
+          {/*   <div className="font-semibold">Office:</div> */}
+          {/*   <div> */}
+          {/*     Lorem ipsum dolor sit amet consectetur. Turpis eu */}
+          {/*     accumsan */}
+          {/*   </div> */}
+          {/* </div> */}
         </div>
       </section>
       {/* Contact Form */}
