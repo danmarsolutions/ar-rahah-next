@@ -189,10 +189,7 @@ export default function Home() {
             </p>
             <ButtonLink href="/about-us">
               Learn more
-              <img
-                className="w-[1.75em] h-fit"
-                src="/icons/triple-chevron.svg"
-              />
+              <ChevronsRight />
             </ButtonLink>
           </div>
         </div>
@@ -214,10 +211,7 @@ export default function Home() {
             className="hidden lg:flex place-self-end"
           >
             Learn more
-            <img
-              className="w-[1.75em] h-fit"
-              src="/icons/triple-chevron.svg"
-            />
+            <ChevronsRight />
           </ButtonLink>
         </div>
         <ExperienceCarousel />
