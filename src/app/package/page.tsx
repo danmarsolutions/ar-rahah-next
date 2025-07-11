@@ -181,38 +181,38 @@ export default function Package() {
           <tbody className="font-albert-sans font-medium text-center sm:text-lg [&>*]:h-fit [&>tr>*]:px-4 [&>tr>*]:py-6 [&>tr>*:nth-child(odd)]:border-l [&>tr>*:nth-child(even)]:border-r [&>tr:last-child>*]:border-b [&>tr>*]:border-t  [&>tr>*:nth-child(even)]:text-red-500">
             <tr>
               <td>9 Nights accommodations</td>
-              <td>-</td>
-            </tr>
-            <tr>
-              <td>Breakfast & Dinner</td>
               <td>Any meals outside of included meals</td>
             </tr>
             <tr>
-              <td>A/C Transport during the Tour</td>
+              <td>Breakfast & Dinner</td>
               <td>Personal Expenses</td>
             </tr>
             <tr>
-              <td>Professional Guide in English</td>
+              <td>A/C Transport during the Tour</td>
               <td>Optional Tours</td>
             </tr>
             <tr>
-              <td>Entrance Fees to the indicated Museums & Sites</td>
+              <td>Professional Guide in English</td>
               <td>
                 Any local transport outside of itinerary i.e. taxis
                 etc.
               </td>
             </tr>
             <tr>
-              <td>Parking costs</td>
+              <td>Entrance Fees to the indicated Museums & Sites</td>
               <td>Hot air Balloon ride in Cappadocia</td>
             </tr>
             <tr>
+              <td>Parking costs</td>
+              <td></td>
+            </tr>
+            <tr>
               <td>Presentations & History talks</td>
-              <td>-</td>
+              <td></td>
             </tr>
             <tr>
               <td className="rounded-bl-2xl">Taxes</td>
-              <td className="rounded-br-2xl">-</td>
+              <td className="rounded-br-2xl"></td>
             </tr>
           </tbody>
         </table>
