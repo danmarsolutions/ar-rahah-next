@@ -22,7 +22,7 @@ import {
   CollapsibleTrigger,
 } from "@/components/ui/collapsible";
 import Link from "next/link";
-import { ChevronDown, ChevronUp } from "lucide-react";
+import { ChevronDown, ChevronUp, Menu } from "lucide-react";
 import { useState } from "react";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
@@ -54,7 +54,7 @@ const navItems: NavItem[] = [
       {
         id: "vacation-turkey",
         displayText: "Trip to Turkey",
-        path: "/",
+        path: "/turkey",
       },
     ],
   },
@@ -77,19 +77,19 @@ export default function HeaderNav() {
 function BreadMenu() {
   const pathname = usePathname();
   const isHome = pathname === "/";
-
-  const breadMenuIcon =
-    (isHome && "/icons/white-bread-menu.svg") ||
-    "/icons/bread-menu.svg";
-
   return (
     <Sheet>
-      <SheetTrigger className="block lg:hidden">
-        <img className="size-6" src={breadMenuIcon} />
+      <SheetTrigger className="block lg:hidden cursor-pointer">
+        <Menu
+          className={cn(
+            "size-6",
+            isHome ? "text-white" : "text-black",
+          )}
+        />
       </SheetTrigger>
-      <SheetContent className="w-full gap-0">
+      <SheetContent className="w-screen gap-0">
         <SheetHeader>
-          <SheetTitle>Nav Menu</SheetTitle>
+          <SheetTitle className="sr-only">Nav Menu</SheetTitle>
         </SheetHeader>
         {navItems.map(
           (navItem) =>
@@ -102,7 +102,7 @@ function BreadMenu() {
             )) || (
               <div
                 key={navItem.id}
-                className="w-full border-t px-3 py-4 font-inter-tight text-lg"
+                className="w-full px-3 py-4 font-inter-tight text-lg"
               >
                 <Link href={navItem.path || "/"}>
                   {navItem.displayText}

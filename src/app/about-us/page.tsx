@@ -1,5 +1,12 @@
 import Header from "@/components/ui/header";
+import { Metadata } from "next";
 import Image from "next/image";
+
+export const metadata: Metadata = {
+  title: "About Us",
+  description:
+    "Discover the purpose and mission of Ar Rahah, your trusted Muslim-friendly travel partner. Learn how we create enriching travel experiences tailored for Muslim travelers, ensuring every journey is spiritually fulfilling and aligned with your values.",
+};
 
 export default function AboutUs() {
   return (

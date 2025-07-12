@@ -1,6 +1,8 @@
 import Link from "next/link";
 import Image from "next/image";
 import ButtonLink from "./button-link";
+import { ChevronsRight } from "lucide-react";
+import { FaFacebook, FaInstagram } from "react-icons/fa";
 
 export default function Footer() {
   return (
@@ -17,17 +19,21 @@ export default function Footer() {
           </div>
           {/* Socials */}
           <div className="flex flex-row gap-6 text-lg">
-            <a className="flex flex-row gap-2.5 items-center justify-between border-0 lg:border border-white/20 rounded-full px-6 py-4 cursor-pointer">
-              <img className="size-5" src="/icons/instagram.svg" />
+            <a
+              href="https://www.instagram.com/ar.rahah?utm_source=ig_web_button_share_sheet&igsh=MXJ6MGVzbzBhd3Fidw=="
+              target="_blank"
+              className="flex flex-row gap-2.5 items-center justify-between border-0 lg:border border-white/20 rounded-full px-6 py-4 cursor-pointer"
+            >
+              <FaInstagram className="size-5" />
               <span className="hidden lg:block">Instagram</span>
             </a>
-            <a className="flex flex-row gap-2.5 items-center justify-between border-0 lg:border border-white/20 rounded-full px-6 py-4 cursor-pointer">
-              <img className="size-5" src="/icons/facebook.svg" />
+            <a
+              href="https://www.facebook.com/arrahahtours/"
+              target="_blank"
+              className="flex flex-row gap-2.5 items-center justify-between border-0 lg:border border-white/20 rounded-full px-6 py-4 cursor-pointer"
+            >
+              <FaFacebook className="size-5" />
               <span className="hidden lg:block">Facebook</span>
-            </a>
-            <a className="flex flex-row gap-2.5 items-center justify-between border-0 lg:border border-white/20 rounded-full px-6 py-4 cursor-pointer">
-              <img className="size-5" src="/icons/youtube.svg" />
-              <span className="hidden lg:block">Youtube</span>
             </a>
           </div>
         </div>
@@ -93,14 +99,11 @@ export default function Footer() {
         </div>
         {/* Book Button */}
         <ButtonLink
-          href="/package"
+          href="/turkey"
           className="bg-white text-black row-start-2 md:col-start-1 lg:col-start-2 md:row-start-2 md:row-end-3 lg:row-start-1 lg:row-end-2 justify-self-end"
         >
           Book a Vacation
-          <img
-            className="w-[1.75em] h-fit"
-            src="/icons/black-triple-chevron.svg"
-          />
+          <ChevronsRight />
         </ButtonLink>
         {/* Images */}
         <div className="w-full md:w-[420px] aspect-[5/4.5] lg:place-self-end row-start-3 md:row-start-2 md:row-end-3 md:col-start-1 lg:col-start-2 lg:row-start-1 lg:row-end-3 lg:row-span-2 grid grid-cols-3 grid-rows-3 gap-2 ">

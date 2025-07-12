@@ -1,6 +1,13 @@
 import ContactForm from "@/components/ui/contact-form";
 import Header from "@/components/ui/header";
-import { Mail, MapPin, Phone } from "lucide-react";
+import { Mail, Phone } from "lucide-react";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Contact Us",
+  description:
+    "Get in touch with Ar Rahah, your trusted Muslim-friendly travel partner. Whether you have questions about our tours, need assistance with bookings, or want to arrange a private group, our team is here to help. Contact us via email or phone, and let us assist you in planning your next enriching travel experience.",
+};
 
 export default function ContactUs() {
   return (
@@ -33,18 +40,18 @@ export default function ContactUs() {
               <Phone size="60%" strokeWidth="1px" />
             </div>
             <div className="font-semibold">Phone:</div>
-            <div>+1 (800) 123-ARAH (2724)</div>
+            <div>647-233-8739</div>
           </div>
-          <div className="w-full flex flex-col gap-4">
-            <div className="border border-slate-300 rounded-2xl flex flex-row items-center justify-center size-16">
-              <MapPin size="60%" strokeWidth="1px" />
-            </div>
-            <div className="font-semibold">Office:</div>
-            <div>
-              Lorem ipsum dolor sit amet consectetur. Turpis eu
-              accumsan
-            </div>
-          </div>
+          {/* <div className="w-full flex flex-col gap-4"> */}
+          {/*   <div className="border border-slate-300 rounded-2xl flex flex-row items-center justify-center size-16"> */}
+          {/*     <MapPin size="60%" strokeWidth="1px" /> */}
+          {/*   </div> */}
+          {/*   <div className="font-semibold">Office:</div> */}
+          {/*   <div> */}
+          {/*     Lorem ipsum dolor sit amet consectetur. Turpis eu */}
+          {/*     accumsan */}
+          {/*   </div> */}
+          {/* </div> */}
         </div>
       </section>
       {/* Contact Form */}

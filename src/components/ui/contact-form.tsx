@@ -38,7 +38,7 @@ import {
 } from "@/components/ui/popover";
 
 import { cn } from "@/lib/utils";
-import { Check, ChevronsUpDown } from "lucide-react";
+import { Check, ChevronsRight, ChevronsUpDown } from "lucide-react";
 
 const formSchema = z.object({
   fullName: z
@@ -362,10 +362,7 @@ export default function ContactForm() {
         >
           <div className="flex flex-row items-center justify-center gap-2">
             <span>Submit</span>
-            <img
-              className="w-[1.5em] h-fit"
-              src="/icons/triple-chevron.svg"
-            />
+            <ChevronsRight />
           </div>
         </Button>
       </form>
