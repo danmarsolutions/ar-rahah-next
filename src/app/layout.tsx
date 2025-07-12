@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter_Tight, Albert_Sans, Galada } from "next/font/google";
 import "./globals.css";
 import Footer from "@/components/ui/footer";
+import { Analytics } from "@vercel/analytics/next";
 
 const interTight = Inter_Tight({
   variable: "--font-inter-tight",
@@ -57,6 +58,7 @@ export default function RootLayout({
         {/* Uncover unique destinations */}
         {/* footer */}
         <Footer />
+        <Analytics />
       </body>
     </html>
   );
