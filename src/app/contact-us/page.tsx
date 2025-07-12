@@ -1,6 +1,13 @@
 import ContactForm from "@/components/ui/contact-form";
 import Header from "@/components/ui/header";
-import { Mail, MapPin, Phone } from "lucide-react";
+import { Mail, Phone } from "lucide-react";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Contact Us",
+  description:
+    "Get in touch with Ar Rahah, your trusted Muslim-friendly travel partner. Whether you have questions about our tours, need assistance with bookings, or want to arrange a private group, our team is here to help. Contact us via email or phone, and let us assist you in planning your next enriching travel experience.",
+};
 
 export default function ContactUs() {
   return (

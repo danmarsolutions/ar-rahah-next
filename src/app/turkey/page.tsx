@@ -6,7 +6,14 @@ import {
   CircleX,
   MapPin,
 } from "lucide-react";
+import { Metadata } from "next";
 import Image from "next/image";
+
+export const metadata: Metadata = {
+  title: "Turkey Trip",
+  description:
+    "Join us for an unforgettable 10-day journey through Turkey with Ar Rahah. Explore the rich history, culture, and spirituality of this beautiful country, from the bustling streets of Istanbul to the serene landscapes of Cappadocia. Experience the warmth of Turkish hospitality and discover the timeless beauty of Ottoman heritage.",
+};
 
 export default function Package() {
   return (
