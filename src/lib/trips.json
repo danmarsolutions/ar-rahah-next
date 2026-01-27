@@ -1,0 +1,219 @@
+{
+  "company": {
+    "name": "Ar Rahah Guides",
+    "tagline": "Relax! Take a Break!",
+    "partner": "Amax Travel",
+    "tico_registration": "50027257",
+    "iata_certified": true,
+    "contact": {
+      "phones": ["647-233-8739", "289-683-8736"],
+      "email": "Toronto@amaax.com",
+      "phone_alt": "416-599-5200",
+      "address": {
+        "street": "2255 Dundas St",
+        "unit": "W#314",
+        "city": "Mississauga",
+        "province": "ON",
+        "country": "Canada"
+      }
+    }
+  },
+  "trips": [
+    {
+      "id": "sandy-lanes-cottage",
+      "slug": "sandy-lanes",
+      "type": "resort",
+      "status": "upcoming",
+      "title": "Sandy Lanes Cottage Resort",
+      "subtitle": "Exclusive Cottage Resort Experience",
+      "tagline": "Affordable Halal Fun For All Ages",
+      "description": "Experience a relaxing getaway at Sandy Lanes Cottage Resort with halal-friendly amenities and activities for the whole family.",
+      "images": {
+        "hero": "/sandy_lane.avif",
+        "gallery": ["/sandy_lane.avif"]
+      },
+      "location": {
+        "country": "Canada",
+        "region": "Ontario",
+        "destinations": ["Sandy Lanes"]
+      },
+      "dates": {
+        "start": "2026-08-21",
+        "end": "2026-08-26"
+      },
+      "duration": {
+        "days": 5,
+        "nights": 4,
+        "flexible": true,
+        "options": "2-night, 3-night, and 5-night options available for both weekends & weekdays (depending on reservations)"
+      },
+      "pricing": {
+        "currency": "CAD",
+        "price": 1500,
+        "perPerson": true,
+        "note": "Price will vary on the options available",
+        "childPricing": {
+          "age": "2-11",
+          "price": 600
+        },
+        "landPackage": null
+      },
+      "inclusions": [
+        "Non-Motorized Water Equipment: Kayaks, Canoes, & Paddle Boats",
+        "Volleyball, Badminton",
+        "An exclusive separate time will be given for Sisters",
+        "Private cottage equipped with AC, a fully equipped kitchen & BBQs"
+      ],
+      "exclusions": [
+        "Jet Ski",
+        "100% Halal Food on-site (available at additional cost)"
+      ],
+      "itinerary": null
+    },
+    {
+      "id": "turkey-ottomans-2026",
+      "slug": "turkey",
+      "type": "tour",
+      "status": "upcoming",
+      "title": "Rise of the Ottomans Tour",
+      "subtitle": "10 Days Turkey Exploration",
+      "tagline": "Walk in the footsteps of empires.",
+      "theme": "Culture, History & Spirituality",
+      "description": "Join us for an unforgettable 10-day journey through Turkey with Ar Rahah. Explore the rich history, culture, and spirituality of this beautiful country, from the bustling streets of Istanbul to the serene landscapes of Cappadocia. Experience the warmth of Turkish hospitality and discover the timeless beauty of Ottoman heritage.",
+      "images": {
+        "hero": "/mosque.jpg",
+        "card": "/tower-with-cloud.jpg",
+        "gallery": ["/mosque.jpg", "/bird-flying.jpg", "/hot-balloons.jpg"]
+      },
+      "location": {
+        "country": "Turkey",
+        "region": null,
+        "destinations": ["Istanbul", "Bursa", "Konya", "Cappadocia"]
+      },
+      "dates": {
+        "start": "2026-08-02",
+        "end": "2026-08-12"
+      },
+      "duration": {
+        "days": 11,
+        "nights": 10,
+        "flexible": false,
+        "options": null
+      },
+      "pricing": {
+        "currency": "CAD",
+        "price": 4250,
+        "perPerson": true,
+        "note": "Land package available on request",
+        "childPricing": {
+          "age": "2-11",
+          "price": 3080
+        }
+      },
+      "inclusions": [
+        "9 Nights accommodations",
+        "Breakfast & Dinner",
+        "A/C Transport during the Tour",
+        "Professional Guide in English",
+        "Entrance Fees to the indicated Museums & Sites",
+        "Parking costs",
+        "Presentations & History talks",
+        "Taxes"
+      ],
+      "exclusions": [
+        "Any meals outside of included meals",
+        "Personal Expenses",
+        "Optional Tours",
+        "Any local transport outside of itinerary i.e. taxis etc.",
+        "Hot air Balloon ride in Cappadocia"
+      ],
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Arrival in Istanbul",
+          "description": "Arrive at Istanbul Airport, transfer to hotel, and rest."
+        },
+        {
+          "day": 2,
+          "title": "Istanbul - Historic Peninsula",
+          "description": "Visit Hagia Sophia, Blue Mosque, Topkapi Palace, and the Grand Bazaar."
+        },
+        {
+          "day": 3,
+          "title": "Istanbul - Bosphorus",
+          "description": "Bosphorus cruise, Dolmabahce Palace, and Taksim Square."
+        },
+        {
+          "day": 4,
+          "title": "Istanbul to Bursa",
+          "description": "Travel to Bursa, visit the Green Mosque and Tomb, Ulu Cami."
+        },
+        {
+          "day": 5,
+          "title": "Bursa",
+          "description": "Explore Ottoman historical sites, silk market, and local cuisine."
+        },
+        {
+          "day": 6,
+          "title": "Bursa to Konya",
+          "description": "Travel to Konya, visit Mevlana Museum."
+        },
+        {
+          "day": 7,
+          "title": "Konya to Cappadocia",
+          "description": "Travel to Cappadocia, explore underground cities."
+        },
+        {
+          "day": 8,
+          "title": "Cappadocia",
+          "description": "Visit Goreme Open Air Museum, fairy chimneys, and valleys."
+        },
+        {
+          "day": 9,
+          "title": "Cappadocia",
+          "description": "Free time for optional hot air balloon ride, pottery workshops."
+        },
+        {
+          "day": 10,
+          "title": "Return to Istanbul",
+          "description": "Fly back to Istanbul, last-minute shopping, farewell dinner."
+        },
+        {
+          "day": 11,
+          "title": "Departure",
+          "description": "Transfer to airport for departure."
+        }
+      ]
+    }
+  ],
+  "destinations": [
+    {
+      "id": "sandy-lane-2019",
+      "image": "/sandy_lane.avif",
+      "title": "Sandy Lane Resort",
+      "description": "Lakeside cabins, peaceful nature, and cozy comfort just a few hours from the city.",
+      "year": "2019"
+    },
+    {
+      "id": "bonnie-view-2023",
+      "image": "/bonnie_view_inn.jpeg",
+      "title": "Bonnie View Inn",
+      "description": "Rustic charm meets modern ease on a quiet waterfront escape.",
+      "year": "2023"
+    },
+    {
+      "id": "sandy-lane-2026",
+      "image": "/sandy_lane.avif",
+      "title": "Sandy Lane Resort",
+      "description": "Return to lakeside serenity with halal-friendly amenities and family fun.",
+      "year": "2026"
+    },
+    {
+      "id": "turkey-2025",
+      "image": "/tower-with-cloud.jpg",
+      "title": "Turkey",
+      "description": "Ottoman legacies, whirling dervishes, and Istanbul's grand mosques.",
+      "year": "2026"
+    }
+  ]
+}

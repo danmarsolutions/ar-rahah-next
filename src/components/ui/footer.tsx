@@ -100,10 +100,11 @@ export default function Footer() {
         {/* Book Button */}
         <ButtonLink
           href="/turkey"
-          className="bg-white text-black row-start-2 md:col-start-1 lg:col-start-2 md:row-start-2 md:row-end-3 lg:row-start-1 lg:row-end-2 justify-self-end"
+          variant="secondary"
+          className="row-start-2 md:col-start-1 lg:col-start-2 md:row-start-2 md:row-end-3 lg:row-start-1 lg:row-end-2 justify-self-end"
         >
           Book a Vacation
-          <ChevronsRight />
+          <ChevronsRight aria-hidden />
         </ButtonLink>
         {/* Images */}
         <div className="w-full md:w-[420px] aspect-[5/4.5] lg:place-self-end row-start-3 md:row-start-2 md:row-end-3 md:col-start-1 lg:col-start-2 lg:row-start-1 lg:row-end-3 lg:row-span-2 grid grid-cols-3 grid-rows-3 gap-2 ">
@@ -114,6 +115,7 @@ export default function Footer() {
                 src={`/footer/f${index + 1}.png`}
                 alt=""
                 fill
+                aria-hidden
               />
             </div>
           ))}

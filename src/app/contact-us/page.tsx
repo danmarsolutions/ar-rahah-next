@@ -1,5 +1,6 @@
 import ContactForm from "@/components/ui/contact-form";
 import Header from "@/components/ui/header";
+import { Section } from "@/components/ui/section";
 import { Mail, Phone } from "lucide-react";
 import { Metadata } from "next";
 
@@ -14,7 +15,7 @@ export default function ContactUs() {
     <main className="w-full flex flex-col items-center">
       <Header />
       {/* Get in Touch */}
-      <section className="w-full flex flex-col gap-20 px-4 md:px-8 lg:px-38 py-16 lg:py-20">
+      <Section className="w-full flex flex-col items-center gap-20 !px-4 md:!px-8 lg:!px-16 xl:!px-24 2xl:!px-32">
         <div className="flex flex-col items-center gap-8">
           <h1 className="w-full text-4xl md:text-5xl md:text-center font-inter-tight font-semibold">
             Let&apos;s Get In Touch
@@ -29,14 +30,20 @@ export default function ContactUs() {
         </div>
         <div className="flex flex-col gap-12 md:gap-0 md:flex-row justify-between font-albert-sans text-lg md:text-xl">
           <div className="w-full flex flex-col gap-4">
-            <div className="border border-slate-300 rounded-2xl flex flex-row items-center justify-center size-16">
+            <div
+              className="border border-border rounded-2xl flex flex-row items-center justify-center size-16"
+              aria-hidden
+            >
               <Mail size="60%" strokeWidth="1px" />
             </div>
             <div className="font-semibold">Email:</div>
             <div>info@arrahah.com</div>
           </div>
           <div className="w-full flex flex-col gap-4">
-            <div className="border border-slate-300 rounded-2xl flex flex-row items-center justify-center size-16">
+            <div
+              className="border border-border rounded-2xl flex flex-row items-center justify-center size-16"
+              aria-hidden
+            >
               <Phone size="60%" strokeWidth="1px" />
             </div>
             <div className="font-semibold">Phone:</div>
@@ -53,14 +60,14 @@ export default function ContactUs() {
           {/*   </div> */}
           {/* </div> */}
         </div>
-      </section>
+      </Section>
       {/* Contact Form */}
-      <section className="w-full flex flex-col gap-15 lg:gap-20 px-4 md:px-8 lg:px-38 2xl:px-56 py-16 lg:py-20">
-        <h2 className="font-inter-tight text-[32px] lg:text-5xl font-semibold">
+      <Section className="w-full flex flex-col items-center gap-16 lg:gap-20 !px-4 md:!px-8 lg:!px-16 xl:!px-24 2xl:!px-32">
+        <h2 className="font-inter-tight text-3xl lg:text-5xl font-semibold w-full text-center lg:text-left">
           Or fill this form below to get inquired!
         </h2>
         <ContactForm />
-      </section>
+      </Section>
     </main>
   );
 }

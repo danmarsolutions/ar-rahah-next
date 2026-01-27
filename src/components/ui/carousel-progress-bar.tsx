@@ -17,7 +17,7 @@ export default function ProgressBar({
   return (
     <div
       className={cn(
-        "relative bg-[#EFEFEF] h-2 rounded-full w-full",
+        "relative bg-carousel-btn-inactive h-2 rounded-full w-full",
         className,
       )}
     >

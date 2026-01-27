@@ -98,23 +98,31 @@ export default function ExperienceCarousel() {
           totalItems={count}
         />
         <div className="w-full flex flex-row justify-center md:justify-end gap-2.5">
-          <div
+          <button
+            type="button"
             onClick={() => api?.scrollPrev()}
-            className="flex flex-row items-center justify-center size-10 rounded-full bg-[#EFEFEF]"
+            aria-label="Previous experience"
+            className="flex flex-row items-center justify-center size-10 rounded-full bg-carousel-btn-inactive hover:opacity-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
           >
-            <ChevronLeft size={24} />
-          </div>
-          <div
+            <ChevronLeft size={24} aria-hidden />
+          </button>
+          <button
+            type="button"
             onClick={() => api?.scrollNext()}
-            className="flex flex-row items-center justify-center size-10 rounded-full bg-black text-white"
+            aria-label="Next experience"
+            className="flex flex-row items-center justify-center size-10 rounded-full bg-black text-white hover:opacity-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
           >
-            <ChevronRight size={24} />
-          </div>
+            <ChevronRight size={24} aria-hidden />
+          </button>
         </div>
       </div>
-      <ButtonLink href="/about-us" className="flex lg:hidden w-full">
+      <ButtonLink
+        href="/about-us"
+        variant="primary"
+        className="flex lg:hidden w-full"
+      >
         Learn more
-        <ChevronsRight />
+        <ChevronsRight aria-hidden />
       </ButtonLink>
     </Carousel>
   );
@@ -130,11 +138,11 @@ function ExperienceCard({
   return (
     <div className="flex flex-col gap-6 w-full border rounded-2xl p-4">
       <div className="w-full h-full flex flex-col gap-6 lg:gap-0 lg:flex-row justify-between">
-        <div className="basis-[80%] xl:basis-[60%] aspect-[370/350] lg:aspect-[450/350] order-2 lg:order-1 relative">
+        <div className="basis-[80%] xl:basis-[60%] aspect-[370/350] lg:aspect-[450/350] order-2 lg:order-1 relative overflow-hidden rounded-2xl">
           <Image
             src={experience.image}
-            className="rounded-2xl -z-10 object-cover"
-            alt=""
+            className="object-cover"
+            alt={`${experience.title} – ${experience.description}`}
             fill
           />
         </div>

@@ -81,7 +81,7 @@ const tourPlan: TourPlanDay[] = [
     ],
   },
   {
-    title: "Day 9 – Istanbul: Discovering the Ottoman Hertitage",
+    title: "Day 9 – Istanbul: Discovering the Ottoman Heritage",
     activities: [
       "Explore the opulent Topkapi Palace and the Otoman Sultans residence.",
       "Visit the Hagia Sopia Mosque and its historical significance.",
@@ -90,7 +90,7 @@ const tourPlan: TourPlanDay[] = [
   },
   {
     title:
-      "Day 10 – Departure form Istanbul: Farewell to a Journey Through Time",
+      "Day 10 – Departure from Istanbul: Farewell to a Journey Through Time",
     activities: [
       "Last moment for exploration or relaxation in Istanbul.",
       "Departure from Turkey.",

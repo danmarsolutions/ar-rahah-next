@@ -24,8 +24,6 @@ import {
 import Link from "next/link";
 import { ChevronDown, ChevronUp, Menu } from "lucide-react";
 import { useState } from "react";
-import { usePathname } from "next/navigation";
-import { cn } from "@/lib/utils";
 
 type NavItem = {
   id: string;
@@ -75,17 +73,13 @@ export default function HeaderNav() {
 }
 
 function BreadMenu() {
-  const pathname = usePathname();
-  const isHome = pathname === "/";
   return (
     <Sheet>
-      <SheetTrigger className="block lg:hidden cursor-pointer">
-        <Menu
-          className={cn(
-            "size-6",
-            isHome ? "text-white" : "text-black",
-          )}
-        />
+      <SheetTrigger
+        className="block lg:hidden cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 rounded"
+        aria-label="Open menu"
+      >
+        <Menu className="size-6 text-black" aria-hidden />
       </SheetTrigger>
       <SheetContent className="w-screen gap-0">
         <SheetHeader>
@@ -149,15 +143,12 @@ function SubMenu({
 }
 
 function NavMenu() {
-  const pathname = usePathname();
-  const isHome = pathname === "/";
-
   return (
     <NavigationMenu
       className="hidden lg:flex font-inter-tight"
       viewport={true}
     >
-      <NavigationMenuList className={cn(isHome && "text-white")}>
+      <NavigationMenuList>
         {navItems.map(
           (navItem) =>
             (navItem.items && (

@@ -45,12 +45,14 @@ export default function Testimonials() {
       }}
       className="w-full flex flex-col lg:flex-row gap-10 xl:gap-24 2xl:gap-32"
     >
-      <div
+      <button
+        type="button"
         onClick={() => api?.scrollPrev()}
-        className="hidden self-center lg:flex flex-row items-center justify-center size-10 rounded-full bg-[#EFEFEF] aspect-square"
+        aria-label="Previous testimonial"
+        className="hidden self-center lg:flex flex-row items-center justify-center size-10 rounded-full bg-carousel-btn-inactive aspect-square hover:opacity-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
       >
-        <ChevronLeft size={24} />
-      </div>
+        <ChevronLeft size={24} aria-hidden />
+      </button>
       <CarouselContent>
         {testimonials.map((testimonial, index) => (
           <CarouselItem key={index} className="w-full">
@@ -58,25 +60,31 @@ export default function Testimonials() {
           </CarouselItem>
         ))}
       </CarouselContent>
-      <div
+      <button
+        type="button"
         onClick={() => api?.scrollNext()}
-        className="hidden self-center lg:flex flex-row items-center justify-center size-10 rounded-full bg-black text-white aspect-square"
+        aria-label="Next testimonial"
+        className="hidden self-center lg:flex flex-row items-center justify-center size-10 rounded-full bg-black text-white aspect-square hover:opacity-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
       >
-        <ChevronRight size={24} />
-      </div>
+        <ChevronRight size={24} aria-hidden />
+      </button>
       <div className="flex lg:hidden flex-row gap-4 self-center">
-        <div
+        <button
+          type="button"
           onClick={() => api?.scrollPrev()}
-          className="flex flex-row items-center justify-center size-10 rounded-full bg-[#EFEFEF] aspect-square"
+          aria-label="Previous testimonial"
+          className="flex flex-row items-center justify-center size-10 rounded-full bg-carousel-btn-inactive aspect-square hover:opacity-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
         >
-          <ChevronLeft size={24} />
-        </div>
-        <div
+          <ChevronLeft size={24} aria-hidden />
+        </button>
+        <button
+          type="button"
           onClick={() => api?.scrollNext()}
-          className="flex flex-row items-center justify-center size-10 rounded-full bg-black text-white aspect-square"
+          aria-label="Next testimonial"
+          className="flex flex-row items-center justify-center size-10 rounded-full bg-black text-white aspect-square hover:opacity-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
         >
-          <ChevronRight size={24} />
-        </div>
+          <ChevronRight size={24} aria-hidden />
+        </button>
       </div>
     </Carousel>
   );

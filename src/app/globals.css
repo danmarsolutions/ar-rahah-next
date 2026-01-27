@@ -5,6 +5,12 @@
 
 @theme {
   --breakpoint-3xl: 1920px;
+  --color-section-bg: #f7f7f7;
+  --color-pill-bg: #efefef;
+  --color-carousel-btn-inactive: #efefef;
+  --color-brand-accent: oklch(0.48 0.14 200);
+  --color-brand-accent-foreground: oklch(0.985 0 0);
+  --radius-hero: 3rem;
 }
 
 @theme inline {
@@ -12,7 +18,6 @@
   --color-foreground: var(--foreground);
   --font-inter-tight: var(--font-inter-tight);
   --font-albert-sans: var(--font-albert-sans);
-  --font-galada: var(--font-galada);
   --color-sidebar-ring: var(--sidebar-ring);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
@@ -50,15 +55,9 @@
   --radius-xl: calc(var(--radius) + 4px);
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 :root {
   --radius: 0.625rem;
+  --radius-hero: 3rem;
   --background: oklch(1 0 0);
   --foreground: oklch(0.145 0 0);
   --card: oklch(1 0 0);
@@ -77,6 +76,11 @@
   --border: oklch(0.922 0 0);
   --input: oklch(0.922 0 0);
   --ring: oklch(0.708 0 0);
+  --section-bg: #f7f7f7;
+  --pill-bg: #efefef;
+  --carousel-btn-inactive: #efefef;
+  --brand-accent: oklch(0.48 0.14 200);
+  --brand-accent-foreground: oklch(0.985 0 0);
   --chart-1: oklch(0.646 0.222 41.116);
   --chart-2: oklch(0.6 0.118 184.704);
   --chart-3: oklch(0.398 0.07 227.392);
@@ -111,6 +115,11 @@
   --border: oklch(1 0 0 / 10%);
   --input: oklch(1 0 0 / 15%);
   --ring: oklch(0.556 0 0);
+  --section-bg: oklch(0.2 0 0);
+  --pill-bg: oklch(0.269 0 0);
+  --carousel-btn-inactive: oklch(0.269 0 0);
+  --brand-accent: oklch(0.55 0.14 200);
+  --brand-accent-foreground: oklch(0.985 0 0);
   --chart-1: oklch(0.488 0.243 264.376);
   --chart-2: oklch(0.696 0.17 162.48);
   --chart-3: oklch(0.769 0.188 70.08);

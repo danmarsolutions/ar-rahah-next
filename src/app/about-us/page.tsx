@@ -36,9 +36,9 @@ export default function AboutUs() {
         </div>
         <div className="relative w-full h-[420px] lg:h-full rounded-xl order-1 lg:order-3 col-span-full lg:col-span-1">
           <Image
-            className="rounded-3xl md:rounded-[60px] object-cover"
+            className="rounded-2xl md:rounded-hero object-cover"
             src="/about-us/blue-cave.jpg"
-            alt=""
+            alt="Blue cave coastal landscape"
             fill
           />
         </div>
@@ -47,9 +47,9 @@ export default function AboutUs() {
       <section className="w-full grid grid-cols-1 lg:grid-cols-[1.25fr_1fr] 2xl:grid-cols-[2fr_1fr] grid-rows-[auto_auto] gap-8 lg:gap-10 2xl:gap-20 px-4 py-10 sm:py-14 sm:px-12 xl:px-24">
         <div className="relative w-full aspect-square lg:aspect-auto lg:h-full row-start-3 lg:row-start-1 row-span-full">
           <Image
-            className="rounded-3xl sm:rounded-[60px] object-cover"
+            className="rounded-2xl sm:rounded-hero object-cover"
             src="/about-us/aerial-drone.jpg"
-            alt=""
+            alt="Aerial view of landscape"
             fill
           />
         </div>
@@ -168,9 +168,9 @@ export default function AboutUs() {
           </div>
           <div className="relative w-full h-full aspect-square lg:aspect-auto">
             <Image
-              className="rounded-3xl sm:rounded-[60px] object-cover"
+              className="rounded-2xl sm:rounded-hero object-cover"
               src="/about-us/river-bank.jpg"
-              alt=""
+              alt="River bank scenery"
               fill
             />
           </div>
@@ -192,9 +192,9 @@ export default function AboutUs() {
         </div>
         <div className="relative w-full h-[300px] sm:h-[480px] lg:h-[512px]">
           <Image
-            className="rounded-3xl sm:rounded-[60px] object-cover object-bottom"
+            className="rounded-2xl sm:rounded-hero object-cover object-bottom"
             src="/about-us/boatman.jpg"
-            alt=""
+            alt="Boatman on the water"
             fill
           />
         </div>

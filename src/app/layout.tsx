@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter_Tight, Albert_Sans, Galada } from "next/font/google";
+import { Inter_Tight, Albert_Sans } from "next/font/google";
 import "./globals.css";
 import Footer from "@/components/ui/footer";
 import { Analytics } from "@vercel/analytics/next";
@@ -14,16 +14,11 @@ const albertSans = Albert_Sans({
   subsets: ["latin"],
 });
 
-const galada = Galada({
-  variable: "--font-galada",
-  weight: "400",
-  subsets: ["latin"],
-});
-
 const description =
   "Ar Rahah—Your Trusted Muslim-Friendly Travel Partner. Specializing in creating enriching travel experiences tailored for Muslim travelers. From halal-certified dining to prayer accommodations and spiritually meaningful itineraries, we ensure your journey is seamless, fulfilling, and aligned with your values—wherever you go.";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://arrahah.com"),
   title: {
     template: "%s | Ar-Rahah",
     default: "Ar-Rahah",
@@ -52,11 +47,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${interTight.variable} ${albertSans.variable} ${galada.variable} flex flex-col mx-auto w-full antialiased box-border`}
+        className={`${interTight.variable} ${albertSans.variable} flex flex-col mx-auto w-full antialiased box-border`}
       >
         {children}
-        {/* Uncover unique destinations */}
-        {/* footer */}
         <Footer />
         <Analytics />
       </body>

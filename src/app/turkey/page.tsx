@@ -1,4 +1,5 @@
 import Header from "@/components/ui/header";
+import { Section, SectionBadge } from "@/components/ui/section";
 import TourPlanAccordion from "@/components/ui/tour-plan-accordion";
 import {
   CalendarDays,
@@ -59,9 +60,9 @@ export default function Package() {
         <div className="w-full min-h-[360px] sm:min-h-[480px] md:min-h-[680px] grid grid-cols-[minmax(180px,1fr)_minmax(100px,180px)] sm:grid-cols-[minmax(316px,1fr)_minmax(200px,300px)] md:grid-cols-[1fr_300px] xl:grid-cols-[1fr_500px] grid-rows-2 gap-2 sm:gap-4">
           <div className="relative row-span-2 h-full w-full flex flex-col gap-6 justify-end lg:p-6 xl:p-12">
             <Image
-              className="rounded-lg md:rounded-2xl -z-10 object-cover object-bottom"
+              className="rounded-xl md:rounded-2xl -z-10 object-cover object-bottom"
               src="/mosque.jpg"
-              alt=""
+              alt="Historic mosque in Turkey"
               fill
             />
             <div className="hidden lg:block font-inter-tight font-semibold text-5xl text-white">
@@ -87,17 +88,17 @@ export default function Package() {
           </div>
           <div className="relative h-full w-full">
             <Image
-              className="rounded-lg md:rounded-2xl object-cover"
+              className="rounded-xl md:rounded-2xl object-cover"
               src="/bird-flying.jpg"
-              alt=""
+              alt="Bird in flight over landscape"
               fill
             />
           </div>
           <div className="relative h-full w-full">
             <Image
-              className="rounded-lg md:rounded-2xl object-cover"
+              className="rounded-xl md:rounded-2xl object-cover"
               src="/hot-balloons.jpg"
-              alt=""
+              alt="Hot air balloons over Cappadocia"
               fill
             />
           </div>
@@ -105,11 +106,11 @@ export default function Package() {
       </section>
       {/* About Turkey Trip */}
       <section className="w-full grid grid-cols-1 lg:grid-cols-2 grid-rows-[1fr_max-content] lg:grid-rows-1 gap-20 lg:gap-10 2xl:gap-20 p-4 py-14 sm:p-12 xl:p-24 2xl:p-32">
-        <div className="relative w-full row-start-2 lg:row-auto min-h-[350px] sm:min-h-[420px] ">
+        <div className="relative w-full row-start-2 lg:row-auto min-h-[350px] sm:min-h-[420px]">
           <Image
-            className="rounded-4xl object-cover"
+            className="rounded-2xl lg:rounded-hero object-cover"
             src="/bird-flying.jpg"
-            alt=""
+            alt="Bird in flight over Turkish landscape"
             fill
           />
         </div>
@@ -142,23 +143,15 @@ export default function Package() {
             gain a deeper appreciation for the legacies that continue
             to shape our world today.
           </p>
-          <p>
-            This is not just a holiday—it is an exploration of faith,
-            history, and civilization. It is a journey of learning,
-            reflection, and inspiration. As you walk through the lands
-            that have witnessed the rise and fall of empires, you will
-            gain a deeper appreciation for the legacies that continue
-            to shape our world today.
-          </p>
         </div>
       </section>
-      {/* Inclusion & Exlusion Table */}
-      <section className="w-full flex flex-col items-center gap-15 p-4 py-14 sm:p-12 xl:p-24 2xl:p-32">
+      {/* Inclusion & Exclusion Table */}
+      <Section className="flex flex-col items-center gap-16">
         <div className="flex flex-col items-center gap-8">
-          <div className="bg-[#EFEFEF] text-[14px] sm:text-base w-fit font-inter-tight py-3 px-5 rounded-full">
+          <SectionBadge className="text-sm sm:text-base">
             Inclusion & Exclusion
-          </div>
-          <h2 className="font-inter-tight font-semibold text-center text-[32px] lg:text-5xl">
+          </SectionBadge>
+          <h2 className="font-inter-tight font-semibold text-center text-3xl lg:text-5xl">
             What&apos;s Covered in your Experience?
           </h2>
         </div>
@@ -170,7 +163,7 @@ export default function Package() {
                 scope="col"
               >
                 <div className="flex flex-row items-center justify-center gap-3 lg:gap-4 h-full">
-                  <CircleCheck size="1.25em" />
+                  <CircleCheck size="1.25em" aria-hidden />
                   <span>Included</span>
                 </div>
               </th>
@@ -179,13 +172,13 @@ export default function Package() {
                 scope="col"
               >
                 <div className="flex flex-row items-center justify-center gap-3 lg:gap-4 h-full">
-                  <CircleX size="1.25em" />
+                  <CircleX size="1.25em" aria-hidden />
                   <span>Not Included</span>
                 </div>
               </th>
             </tr>
           </thead>
-          <tbody className="font-albert-sans font-medium text-center sm:text-lg [&>*]:h-fit [&>tr>*]:px-4 [&>tr>*]:py-6 [&>tr>*:nth-child(odd)]:border-l [&>tr>*:nth-child(even)]:border-r [&>tr:last-child>*]:border-b [&>tr>*]:border-t  [&>tr>*:nth-child(even)]:text-red-500">
+          <tbody className="font-albert-sans font-medium text-center sm:text-lg [&>*]:h-fit [&>tr>*]:px-4 [&>tr>*]:py-6 [&>tr>*:nth-child(odd)]:border-l [&>tr>*:nth-child(even)]:border-r [&>tr:last-child>*]:border-b [&>tr>*]:border-t [&>tr>*:nth-child(even)]:text-destructive">
             <tr>
               <td>9 Nights accommodations</td>
               <td>Any meals outside of included meals</td>
@@ -238,7 +231,7 @@ export default function Package() {
               return (
                 <div className="py-2" key={index}>
                   <div className="text-green-600 font-semibold flex items-center gap-2">
-                    <CircleCheck size="1em" />
+                    <CircleCheck size="1em" aria-hidden />
                     <span>{included}</span>
                   </div>
                 </div>
@@ -255,8 +248,8 @@ export default function Package() {
             ].map((notIncluded, index) => {
               return (
                 <div className="py-2" key={index}>
-                  <div className="text-red-600 font-semibold flex items-center gap-2">
-                    <CircleX size="1em" />
+                  <div className="text-destructive font-semibold flex items-center gap-2">
+                    <CircleX size="1em" aria-hidden />
                     <span>{notIncluded}</span>
                   </div>
                 </div>
@@ -285,15 +278,15 @@ export default function Package() {
           {/*   </div> */}
           {/* ))} */}
         </div>
-      </section>
+      </Section>
       {/* Tour Plan */}
-      <section className="flex flex-col gap-15 lg:gap-20 p-4 py-14 sm:p-12 xl:p-24 2xl:p-32">
+      <Section className="flex flex-col gap-16 lg:gap-20">
         <div className="flex flex-col gap-6 lg:gap-8">
-          <div className="bg-[#EFEFEF] text-[14px] sm:text-base w-fit font-inter-tight py-3 px-5 rounded-full">
+          <SectionBadge className="text-sm sm:text-base">
             Tour Plan
-          </div>
+          </SectionBadge>
           <div className="font-inter-tight flex flex-wrap gap-2 items-end">
-            <h2 className=" font-semibold text-left text-[32px] lg:text-5xl">
+            <h2 className="font-semibold text-left text-3xl lg:text-5xl">
               10 Day Itinerary{" "}
             </h2>
             <span className="font-normal text-xl">
@@ -303,7 +296,7 @@ export default function Package() {
           </div>
         </div>
         <TourPlanAccordion />
-      </section>
+      </Section>
     </main>
   );
 }
