@@ -3,6 +3,7 @@ import { Inter_Tight, Albert_Sans } from "next/font/google";
 import "./globals.css";
 import Footer from "@/components/ui/footer";
 import { Analytics } from "@vercel/analytics/next";
+import { Toaster } from "@/components/ui/sonner";
 
 const interTight = Inter_Tight({
   variable: "--font-inter-tight",
@@ -51,6 +52,7 @@ export default function RootLayout({
       >
         {children}
         <Footer />
+        <Toaster position="bottom-right" />
         <Analytics />
       </body>
     </html>

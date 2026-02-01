@@ -244,16 +244,17 @@ export default function Home() {
         </div>
         <Testimonials />
       </Section>
+      {/* Book Trip To Turkey Banner */}
       <section className="relative w-full sm:max-h-[512px] min-h-[40vh] flex flex-col items-center justify-center text-white p-4 md:p-6">
         <Image
-          className="p-4 rounded-3xl md:rounded-hero -z-10 object-cover object-center"
+          className="p-4 rounded-[32px] md:rounded-[48px] lg:rounded-hero -z-10 object-cover object-center"
           src="/uncover-unique.jpg"
           alt="Uncover unique travel destinations"
           fill
         />
         <div className="flex flex-col items-center justify-center font-albert-sans gap-12 max-w-[1074px] m-8 md:mx-10">
           <div className="flex flex-col gap-4">
-            <h2 className="text-4xl md:text-5xl font-semibold text-center leading-tight">
+            <h2 className="text-2xl sm:text-3xl md:text-5xl font-semibold text-center leading-tight">
               Uncover unique destinations tailored just for you by{" "}
               <span className="whitespace-nowrap">Ar Rahah</span>
             </h2>

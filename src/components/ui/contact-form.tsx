@@ -40,6 +40,7 @@ import {
 import { cn } from "@/lib/utils";
 import { Check, ChevronsRight, ChevronsUpDown } from "lucide-react";
 import React from "react";
+import { toast } from "sonner";
 
 const formSchema = z.object({
   fullName: z
@@ -75,6 +76,8 @@ const formSchema = z.object({
 
   address: z.string().optional(),
 
+  tripInquiry: z.string().optional(),
+
   bestTimeToContact: z.string().optional(),
 
   message: z.string().optional(),
@@ -99,17 +102,41 @@ export default function ContactForm() {
       dialCode: "US +1",
       phoneNumber: "",
       address: "",
+      tripInquiry: "",
       bestTimeToContact: "",
       message: "",
       receiveMarketingEmails: false,
     },
   });
 
-  const [isSuccess, setIsSuccess] = React.useState(false);
+  const [isError, setIsError] = React.useState(false);
 
-  function onSubmit(values: z.infer<typeof formSchema>) {
-    console.log(values);
-    setIsSuccess(true);
+  async function onSubmit(values: z.infer<typeof formSchema>) {
+    try {
+      setIsError(false);
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(values),
+      });
+
+      if (!response.ok) {
+        throw new Error("Failed to send");
+      }
+
+      toast.success("Thank you for reaching out. We'll be in touch soon, Insha'Allah.", {
+        className: "!text-black [&>*]:!text-black",
+      });
+      form.reset();
+    } catch (error) {
+      console.error("Error submitting form:", error);
+      setIsError(true);
+      toast.error("Failed to send message", {
+        description: "Please try again or email us directly at info@arrahah.com",
+      });
+    }
   }
 
   const formLabelClassName = "text-lg font-inter-tight font-semibold";
@@ -123,19 +150,18 @@ export default function ContactForm() {
         className="w-full space-y-16 lg:space-y-20"
         aria-label="Contact form"
       >
-        {!isSuccess && (
-          <div className="w-full space-y-8">
-            <div className="w-full flex flex-col md:flex-row gap-6">
-              {/* Full Name */}
-              <FormField
-                control={form.control}
-                name="fullName"
-                render={({ field }) => (
-                  <FormItem className="w-full">
-                    <FormLabel className={formLabelClassName}>
-                      Full Name*
-                    </FormLabel>
-                    <FormControl>
+        <div className="w-full space-y-8">
+          <div className="w-full flex flex-col md:flex-row gap-6">
+            {/* Full Name */}
+            <FormField
+              control={form.control}
+              name="fullName"
+              render={({ field }) => (
+                <FormItem className="w-full">
+                  <FormLabel className={formLabelClassName}>
+                    Full Name*
+                  </FormLabel>
+                  <FormControl>
                       <Input
                         className={inputClassName}
                         placeholder="Enter your full name..."
@@ -304,6 +330,43 @@ export default function ContactForm() {
                 </FormItem>
               )}
             />
+            {/* Trip Inquiry */}
+            <FormField
+              control={form.control}
+              name="tripInquiry"
+              render={({ field }) => (
+                <FormItem>
+                  <FormLabel className={formLabelClassName}>
+                    Which Trip Are You Inquiring About?
+                  </FormLabel>
+                  <Select
+                    onValueChange={field.onChange}
+                    defaultValue={field.value}
+                  >
+                    <FormControl className="w-full">
+                      <SelectTrigger className="!h-12 text-base">
+                        <SelectValue placeholder="Select a trip" />
+                      </SelectTrigger>
+                    </FormControl>
+                    <SelectContent>
+                      <SelectItem value="general">
+                        General Inquiry
+                      </SelectItem>
+                      <SelectItem value="turkey-ottomans-2026">
+                        Rise of the Ottomans - Turkey (Aug 2026)
+                      </SelectItem>
+                      <SelectItem value="sandy-lanes-cottage">
+                        Sandy Lanes Cottage Resort (Aug 2026)
+                      </SelectItem>
+                      <SelectItem value="other">
+                        Other / Future Trips
+                      </SelectItem>
+                    </SelectContent>
+                  </Select>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
             {/* Best Time */}
             <FormField
               control={form.control}
@@ -323,7 +386,10 @@ export default function ContactForm() {
                       </SelectTrigger>
                     </FormControl>
                     <SelectContent>
-                      <SelectItem value="anyTime">Anytime</SelectItem>
+                      <SelectItem value="anytime">Anytime</SelectItem>
+                      <SelectItem value="morning">Morning (9am - 12pm)</SelectItem>
+                      <SelectItem value="afternoon">Afternoon (12pm - 5pm)</SelectItem>
+                      <SelectItem value="evening">Evening (5pm - 8pm)</SelectItem>
                     </SelectContent>
                   </Select>
                   <FormMessage />
@@ -373,12 +439,12 @@ export default function ContactForm() {
               }}
             />
           </div>
-        )}
-        {isSuccess ? (
-          <p className="font-albert-sans text-lg text-muted-foreground">
-            Thank you! We&apos;ll be in touch soon.
-          </p>
-        ) : (
+        <div className="space-y-4">
+          {isError && (
+            <p className="font-albert-sans text-sm text-red-600">
+              Something went wrong. Please try again or email us directly at info@arrahah.com
+            </p>
+          )}
           <Button
             className="h-fit w-full md:w-fit font-inter-tight font-semibold text-base rounded-full py-3 lg:py-4 md:!px-6 cursor-pointer transition-transform duration-200 hover:scale-[1.02] focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
             type="submit"
@@ -390,7 +456,7 @@ export default function ContactForm() {
               {!isSubmitting && <ChevronsRight aria-hidden />}
             </div>
           </Button>
-        )}
+        </div>
       </form>
     </Form>
   );
