@@ -54,12 +54,22 @@ const navItems: NavItem[] = [
         displayText: "Trip to Turkey",
         path: "/turkey",
       },
+      {
+        id: "vacation-sandylane",
+        displayText: "Trip to Sandylane",
+        path: "/sandylane",
+      },
     ],
   },
   {
     id: "about-us",
     displayText: "About Us",
     path: "/about-us",
+  },
+  {
+    id: "contact",
+    displayText: "Contact",
+    path: "/contact-us",
   },
 ];
 

@@ -7,12 +7,7 @@ import { Phone } from "lucide-react";
 import Testimonials from "@/components/ui/testimonials";
 import { TripsCarousel } from "@/components/ui/trips-carousel";
 
-import {
-  CalendarDays,
-  ChevronRight,
-  MapPin,
-  ChevronsRight,
-} from "lucide-react";
+import { ChevronsRight } from "lucide-react";
 import Image from "next/image";
 
 export default function Home() {
@@ -74,7 +69,7 @@ export default function Home() {
       <Section
         id="topTours"
         variant="muted"
-        className="flex flex-col items-center gap-8"
+        className="flex flex-col items-center gap-8 lg:gap-10"
       >
         <div className="flex flex-col items-center gap-6">
           <SectionBadge>Spiritual Adventure</SectionBadge>
@@ -189,7 +184,7 @@ export default function Home() {
       {/* Our Destinations */}
       <Section
         id="destinations"
-        className="flex flex-col gap-10 xl:gap-16 2xl:gap-20"
+        className="flex flex-col gap-8 lg:gap-12"
       >
         <div className="flex flex-col lg:flex-row justify-between gap-6 lg:gap-12 xl:gap-16 2xl:gap-20">
           <div className="flex flex-col items-center lg:items-start gap-8 lg:gap-4">
@@ -216,7 +211,7 @@ export default function Home() {
       {/* Signature Experiences */}
       <Section
         variant="muted"
-        className="flex flex-col gap-10 xl:gap-16 2xl:gap-20"
+        className="flex flex-col gap-8 lg:gap-12"
       >
         <div className="flex flex-col lg:flex-row justify-between">
           <div className="flex flex-col items-center lg:items-start gap-8">
