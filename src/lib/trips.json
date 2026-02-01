@@ -20,57 +20,6 @@
   },
   "trips": [
     {
-      "id": "sandy-lanes-cottage",
-      "slug": "sandy-lanes",
-      "type": "resort",
-      "status": "upcoming",
-      "title": "Sandy Lanes Cottage Resort",
-      "subtitle": "Exclusive Cottage Resort Experience",
-      "tagline": "Affordable Halal Fun For All Ages",
-      "description": "Experience a relaxing getaway at Sandy Lanes Cottage Resort with halal-friendly amenities and activities for the whole family.",
-      "images": {
-        "hero": "/sandy_lane.avif",
-        "gallery": ["/sandy_lane.avif"]
-      },
-      "location": {
-        "country": "Canada",
-        "region": "Ontario",
-        "destinations": ["Sandy Lanes"]
-      },
-      "dates": {
-        "start": "2026-08-21",
-        "end": "2026-08-26"
-      },
-      "duration": {
-        "days": 5,
-        "nights": 4,
-        "flexible": true,
-        "options": "2-night, 3-night, and 5-night options available for both weekends & weekdays (depending on reservations)"
-      },
-      "pricing": {
-        "currency": "CAD",
-        "price": 1500,
-        "perPerson": true,
-        "note": "Price will vary on the options available",
-        "childPricing": {
-          "age": "2-11",
-          "price": 600
-        },
-        "landPackage": null
-      },
-      "inclusions": [
-        "Non-Motorized Water Equipment: Kayaks, Canoes, & Paddle Boats",
-        "Volleyball, Badminton",
-        "An exclusive separate time will be given for Sisters",
-        "Private cottage equipped with AC, a fully equipped kitchen & BBQs"
-      ],
-      "exclusions": [
-        "Jet Ski",
-        "100% Halal Food on-site (available at additional cost)"
-      ],
-      "itinerary": null
-    },
-    {
       "id": "turkey-ottomans-2026",
       "slug": "turkey",
       "type": "tour",
@@ -184,6 +133,57 @@
           "description": "Transfer to airport for departure."
         }
       ]
+    },
+    {
+      "id": "sandy-lanes-cottage",
+      "slug": "sandylane",
+      "type": "resort",
+      "status": "upcoming",
+      "title": "Sandy Lanes Cottage Resort",
+      "subtitle": "Exclusive Cottage Resort Experience",
+      "tagline": "Affordable Halal Fun For All Ages",
+      "description": "Experience a relaxing getaway at Sandy Lanes Cottage Resort with halal-friendly amenities and activities for the whole family.",
+      "images": {
+        "hero": "/sandy_lane.avif",
+        "gallery": ["/sandy_lane.avif", "/sandy_lane.avif", "/sandy_lane.avif"]
+      },
+      "location": {
+        "country": "Canada",
+        "region": "Ontario",
+        "destinations": ["Sandy Lanes"]
+      },
+      "dates": {
+        "start": "2026-08-21",
+        "end": "2026-08-26"
+      },
+      "duration": {
+        "days": 5,
+        "nights": 4,
+        "flexible": true,
+        "options": "2-night, 3-night, and 5-night options available for both weekends & weekdays (depending on reservations)"
+      },
+      "pricing": {
+        "currency": "CAD",
+        "price": 1500,
+        "perPerson": true,
+        "note": "Price will vary on the options available",
+        "childPricing": {
+          "age": "2-11",
+          "price": 600
+        },
+        "landPackage": null
+      },
+      "inclusions": [
+        "Non-Motorized Water Equipment: Kayaks, Canoes, & Paddle Boats",
+        "Volleyball, Badminton",
+        "An exclusive separate time will be given for Sisters",
+        "Private cottage equipped with AC, a fully equipped kitchen & BBQs"
+      ],
+      "exclusions": [
+        "Jet Ski",
+        "100% Halal Food on-site (available at additional cost)"
+      ],
+      "itinerary": null
     }
   ],
   "destinations": [

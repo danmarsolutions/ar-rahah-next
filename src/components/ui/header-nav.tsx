@@ -56,7 +56,7 @@ const navItems: NavItem[] = [
       },
       {
         id: "vacation-sandylane",
-        displayText: "Trip to Sandylane",
+        displayText: "Trip to Sandy Lane",
         path: "/sandylane",
       },
     ],
@@ -141,9 +141,13 @@ function SubMenu({
           <ChevronDown className="size-[1.25em]" />
         )}
       </CollapsibleTrigger>
-      <CollapsibleContent className="w-full border-t ml-8 px-3 py-4 font-inter-tight text-lg">
+      <CollapsibleContent className="w-full border-t ml-8 px-3 py-4 font-inter-tight text-lg flex flex-col gap-4">
         {navItems.map((navItem) => (
-          <Link key={navItem.id} href={navItem.path || "/"}>
+          <Link
+            key={navItem.id}
+            href={navItem.path || "/"}
+            className="block"
+          >
             {navItem.displayText}
           </Link>
         ))}
